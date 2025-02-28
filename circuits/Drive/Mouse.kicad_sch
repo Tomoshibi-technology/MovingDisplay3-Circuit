@@ -502,6 +502,10 @@
     (effects (font (size 2.54 2.54) (thickness 0.254) bold) (justify left bottom))
     (uuid 4d8df078-d478-43aa-9146-c84c026ece59)
   )
+  (text "配置時は裏向きになるのでフットプリント注意\n表面につくけど裏向きになる" (at 119.38 142.24 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid cc5cbb37-25ee-4613-a57a-f000a660e847)
+  )
 
   (hierarchical_label "Mouse_INT" (shape input) (at 139.7 106.68 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27) bold) (justify right))

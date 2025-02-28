@@ -2250,6 +2250,10 @@
     (stroke (width 0) (type default))
     (uuid 08cccbca-ffa7-4374-96af-048dccddfa4e)
   )
+  (wire (pts (xy 142.24 83.82) (xy 147.32 83.82))
+    (stroke (width 0) (type default))
+    (uuid 0a7e416c-53df-49b2-837d-d9140b6a7c7b)
+  )
   (wire (pts (xy 228.6 160.02) (xy 236.22 160.02))
     (stroke (width 0) (type default))
     (uuid 0ac7074a-bc57-4881-824e-9441eff6bfff)
@@ -2742,6 +2746,10 @@
     (stroke (width 0) (type default))
     (uuid 6bda60b6-a06c-4ba0-9b89-8959fe530e08)
   )
+  (wire (pts (xy 142.24 106.68) (xy 144.78 106.68))
+    (stroke (width 0) (type default))
+    (uuid 6c729088-2555-49af-8107-f1fc32224b8b)
+  )
   (wire (pts (xy 175.26 148.59) (xy 175.26 149.86))
     (stroke (width 0) (type default))
     (uuid 6d34d9e2-6d9a-47f9-905a-90f72675bcd0)
@@ -2815,6 +2823,10 @@
   (wire (pts (xy 114.3 106.68) (xy 116.84 106.68))
     (stroke (width 0) (type default))
     (uuid 7e54dfed-0d16-4227-8fc3-0cb50dfc4418)
+  )
+  (wire (pts (xy 142.24 93.98) (xy 144.78 93.98))
+    (stroke (width 0) (type default))
+    (uuid 7e55bec2-0395-4b04-99af-07c9815dad15)
   )
   (wire (pts (xy 297.18 114.3) (xy 297.18 115.57))
     (stroke (width 0) (type default))
@@ -3075,6 +3087,10 @@
     (stroke (width 0) (type default))
     (uuid b0ad911f-4699-4338-9b28-868bfac5a083)
   )
+  (wire (pts (xy 142.24 109.22) (xy 147.32 109.22))
+    (stroke (width 0) (type default))
+    (uuid b154675a-8e38-4c4f-947f-5beae51db660)
+  )
   (wire (pts (xy 154.94 139.7) (xy 160.02 139.7))
     (stroke (width 0) (type default))
     (uuid b23ddfc1-606a-4f87-af39-c1b649849e4c)
@@ -3265,6 +3281,10 @@
     (stroke (width 0) (type default))
     (uuid d56ea53e-34ec-401d-8719-ddef448efd75)
   )
+  (wire (pts (xy 142.24 81.28) (xy 144.78 81.28))
+    (stroke (width 0) (type default))
+    (uuid d5daed55-446d-421e-876f-2e9ff2c930e3)
+  )
   (wire (pts (xy 185.42 203.2) (xy 185.42 214.63))
     (stroke (width 0) (type default))
     (uuid d7eda855-d4c1-4dc8-a10c-575d772129bc)
@@ -3280,6 +3300,10 @@
   (wire (pts (xy 185.42 222.25) (xy 185.42 233.68))
     (stroke (width 0) (type default))
     (uuid da8046c1-9b53-46ab-98cc-2b2dd679115e)
+  )
+  (wire (pts (xy 142.24 96.52) (xy 147.32 96.52))
+    (stroke (width 0) (type default))
+    (uuid dbce9d84-4323-4ebf-8ba1-18ab42812887)
   )
   (wire (pts (xy 149.86 223.52) (xy 157.48 223.52))
     (stroke (width 0) (type default))
@@ -3437,7 +3461,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2760be75-785f-45c2-b6b2-d9865023a470)
   )
-  (text "電源スイッチ　耐圧大丈夫？" (at 116.84 256.54 0)
+  (text "電源スイッチ　耐圧大丈夫？" (at 157.48 264.16 0)
     (effects (font (size 5.56 5.56)) (justify left bottom))
     (uuid 28e3519b-c821-4be4-8432-8a69cbcea6ba)
   )
@@ -3469,8 +3493,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6a069c05-2ffa-4286-ba24-81ebd87b974e)
   )
-  (text "三端子を新しく選定したのにする\n電源直付けのための穴を設定する\n電源平滑コンデンサは基板設計の時に良い感じに数調整"
-    (at 116.84 281.94 0)
+  (text "三端子を新しく選定したのにする" (at 149.86 274.32 0)
     (effects (font (size 5.56 5.56)) (justify left bottom))
     (uuid 79ec8b84-e725-4110-bc46-192d02bb60e1)
   )
@@ -3552,7 +3575,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 297.18 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 01553e1d-0f40-48e7-aadc-8651e6e90f4b)
-    (property "Reference" "C6" (at 299.72 142.24 0)
+    (property "Reference" "C27" (at 299.72 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 299.72 144.78 0)
@@ -3564,17 +3587,12 @@
     (property "Datasheet" "~" (at 297.18 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid af746efa-6966-47b4-88e6-c65d94cff440))
-    (pin "2" (uuid cdedef10-28b9-4fe9-94fd-1ca70383a4fc))
+    (pin "1" (uuid 63e1dd48-5d42-4f4b-b362-94ddb3024881))
+    (pin "2" (uuid 12624575-5fe5-41e9-99de-4e7409b54ec8))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C6") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C22") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -3583,7 +3601,7 @@
   (symbol (lib_id "power:GND") (at 175.26 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0164c08c-d0c5-46dd-a067-1497af0d2a58)
-    (property "Reference" "#PWR05" (at 175.26 115.57 0)
+    (property "Reference" "#PWR082" (at 175.26 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 175.26 113.03 0)
@@ -3595,16 +3613,11 @@
     (property "Datasheet" "" (at 175.26 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c7c22489-26d9-4409-8e22-af26c803f7ef))
+    (pin "1" (uuid 7e4697d7-37b7-4dcf-b5b5-201042b9f984))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR038") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -3613,7 +3626,7 @@
   (symbol (lib_id "Device:R") (at 335.28 208.28 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 02f5a2cb-ebfe-43f9-8570-b1f3c217614c)
-    (property "Reference" "R20" (at 335.28 213.36 90)
+    (property "Reference" "R72" (at 335.28 213.36 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 335.28 210.82 90)
@@ -3625,17 +3638,12 @@
     (property "Datasheet" "~" (at 335.28 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7c05edb6-72cf-42ce-901b-7ed23933042b))
-    (pin "2" (uuid 27bf6f34-21f2-45e6-8cc0-8a1eea104299))
+    (pin "1" (uuid 317beb54-1931-4f68-92f9-bed2ab51dcb0))
+    (pin "2" (uuid d2437eca-d87f-44c8-9b6f-dc47fbbcfe80))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R20") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R32") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R72") (unit 1)
         )
       )
     )
@@ -3644,7 +3652,7 @@
   (symbol (lib_id "Device:R") (at 309.88 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0378c67c-b0df-49b7-aade-48b892470b24)
-    (property "Reference" "R16" (at 309.88 55.88 90)
+    (property "Reference" "R68" (at 309.88 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 309.88 58.42 90)
@@ -3656,17 +3664,12 @@
     (property "Datasheet" "~" (at 309.88 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7dff70a6-e8ee-4b1c-9d69-72ef7658ac2b))
-    (pin "2" (uuid d420defe-a2a7-4615-b60f-5a40154665cd))
+    (pin "1" (uuid 2c1a1e54-e61f-49aa-a189-4087f14ca148))
+    (pin "2" (uuid 2d4c43a1-d91d-4bac-8576-8d92351fb78a))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R16") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R28") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R68") (unit 1)
         )
       )
     )
@@ -3687,17 +3690,12 @@
     (property "Datasheet" "~" (at 345.44 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 27f4281c-db2e-4638-981b-7b0e2c8e9152))
-    (pin "2" (uuid bd8000cb-8368-4991-800e-4df4e2edf1b5))
+    (pin "1" (uuid 3a474e43-2a36-4433-a773-2ed275659aef))
+    (pin "2" (uuid 30cc33c2-5f05-4803-add4-97f29c3f8a4d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "D9") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D7") (unit 1)
         )
       )
     )
@@ -3706,7 +3704,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 297.18 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 04aec81b-92fa-4088-b9ad-0778f8eba33a)
-    (property "Reference" "C32" (at 299.72 119.38 0)
+    (property "Reference" "C26" (at 299.72 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 299.72 121.92 0)
@@ -3718,12 +3716,12 @@
     (property "Datasheet" "~" (at 297.18 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f9a80a59-980a-46d7-9e92-03ec46bc16e9))
-    (pin "2" (uuid 3854a275-9475-4b8e-8078-eac728e0db5c))
+    (pin "1" (uuid 9200f67f-31a7-4c1d-a839-9515a992ca7d))
+    (pin "2" (uuid 0455cbec-668b-473d-84b0-556e810a71cd))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C32") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -3732,7 +3730,7 @@
   (symbol (lib_id "Device:R") (at 193.04 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 05d1b0d8-c517-4ec3-b8fa-43dd6a1d47b6)
-    (property "Reference" "R9" (at 194.31 77.47 0)
+    (property "Reference" "R58" (at 194.31 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 194.31 80.01 0)
@@ -3744,17 +3742,12 @@
     (property "Datasheet" "~" (at 193.04 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 69eb2860-2846-400e-9e0c-faf671c4f3f1))
-    (pin "2" (uuid 9467f1be-5999-442d-bb20-7c65190d3ce4))
+    (pin "1" (uuid 8b8edd6c-7f71-4c3e-bc86-f96fdffb5a91))
+    (pin "2" (uuid d6e0ad6d-9e69-49ec-92bd-1fd0b5526945))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R9") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R18") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R58") (unit 1)
         )
       )
     )
@@ -3775,16 +3768,11 @@
     (property "Datasheet" "~" (at 246.38 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid fa46adbb-d757-4e52-abbd-a2423b6e2da5))
-    (pin "1" (uuid b4fa9e61-afcf-4866-a6c2-a29f18d28cc3))
+    (pin "2" (uuid 85a065bf-b7d0-4af3-97fe-a7a352075a20))
+    (pin "1" (uuid bf3af995-66a0-4e02-91e1-6ec850f3b12d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "L1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "L1") (unit 1)
         )
       )
@@ -3794,7 +3782,7 @@
   (symbol (lib_id "power:+5V") (at 218.44 210.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0bb7e49b-3867-4cae-beb5-85909b5fe99b)
-    (property "Reference" "#PWR07" (at 218.44 214.63 0)
+    (property "Reference" "#PWR084" (at 218.44 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 218.44 207.01 0)
@@ -3806,16 +3794,11 @@
     (property "Datasheet" "" (at 218.44 210.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ebe94246-163f-4a8d-91a3-6d708e90309c))
+    (pin "1" (uuid e15cd990-fa12-455f-9e75-3c2957fd276c))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR040") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR084") (unit 1)
         )
       )
     )
@@ -3824,7 +3807,7 @@
   (symbol (lib_name "Q_NMOS_GSD_1") (lib_id "Device:Q_NMOS_GSD") (at 180.34 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0bd51175-305a-4588-ae45-0217d22c72e6)
-    (property "Reference" "Q2" (at 175.26 165.1 0)
+    (property "Reference" "Q10" (at 175.26 165.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS138" (at 175.26 167.64 0)
@@ -3836,18 +3819,13 @@
     (property "Datasheet" "~" (at 180.34 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 36b48ac7-e1fb-451c-9578-cfc0fc251ffb))
-    (pin "2" (uuid a5a6751f-5194-4569-a719-3ef34f0bdac0))
-    (pin "3" (uuid 6a9733f8-d466-46cf-aee2-7590a7afe93b))
+    (pin "1" (uuid 55f8bedd-8389-45f7-9bcc-77fd15553245))
+    (pin "2" (uuid c7c9bdb5-cb0a-429b-865c-dcb1c7f13744))
+    (pin "3" (uuid 02f2c43e-9625-46b6-b92f-7267ea30cc23))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q2") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q5") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q10") (unit 1)
         )
       )
     )
@@ -3856,7 +3834,7 @@
   (symbol (lib_id "power:GND") (at 335.28 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c346a3c-50af-41d4-8a41-45b9151e5d4e)
-    (property "Reference" "#PWR0103" (at 335.28 130.81 0)
+    (property "Reference" "#PWR0114" (at 335.28 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 335.28 128.27 0)
@@ -3868,11 +3846,11 @@
     (property "Datasheet" "" (at 335.28 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0f40d690-2a35-4f5a-9dcf-adcdbd46ef04))
+    (pin "1" (uuid afcdc8a5-b3ce-468f-8891-4b77f1733fd3))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0103") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
@@ -3881,7 +3859,7 @@
   (symbol (lib_id "Device:Q_PNP_BEC") (at 152.4 215.9 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0d51f97a-5710-4c14-adbb-472ad741c946)
-    (property "Reference" "Q19" (at 157.48 208.28 0)
+    (property "Reference" "Q7" (at 157.48 208.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "S8550" (at 157.48 210.82 0)
@@ -3893,18 +3871,13 @@
     (property "Datasheet" "~" (at 152.4 215.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 92eab2a7-11c2-45a6-aede-6f537c5b72c7))
-    (pin "2" (uuid aec78a82-9693-46d7-ae97-68d8526e34d9))
-    (pin "3" (uuid b90ea853-c524-4905-b794-0bb12d2f9cb5))
+    (pin "1" (uuid 6ba70bdf-3a74-46d6-b918-aa10c910413b))
+    (pin "2" (uuid 23702fb1-956a-494d-bdae-650321ae9ddb))
+    (pin "3" (uuid 3f8e1e6e-d86c-47b9-9039-e892114a4d62))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q19") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q2") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q7") (unit 1)
         )
       )
     )
@@ -3940,28 +3913,23 @@
     (property "Manufacturer_Part_Number" "MPM3620AGQV-Z" (at 148.59 932.08 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "11" (uuid 83cb09f5-3177-4c9d-bbca-6ff2dfbba304))
-    (pin "4" (uuid 38056663-a47d-4da9-9cce-aa8318a524bb))
-    (pin "9" (uuid 2d48d1d6-0706-41e8-accd-899c3538f1d7))
-    (pin "14" (uuid 926cf8f8-e865-4e7d-af02-ea9f987fb8ee))
-    (pin "13" (uuid 9e509ab8-12fa-4411-933f-ad07e2d2813d))
-    (pin "3" (uuid 90da94b4-3a8b-4a48-8b16-b5cccb82da24))
-    (pin "18" (uuid 767181a1-d360-4845-8143-2fad3004356f))
-    (pin "12" (uuid b1853447-fc44-4a0b-9f21-0ddc5e834a81))
-    (pin "16" (uuid 5a2704d9-d031-45aa-aaf8-a7898fa37f69))
-    (pin "1" (uuid 9f5cc301-f552-47f7-be3d-dff033e772fd))
-    (pin "15" (uuid 89aa39a7-40a0-4ed6-b865-d17f5c5190b6))
-    (pin "10" (uuid 82d34ebe-baf0-4488-8028-07d5c41a411e))
-    (pin "17" (uuid d75b9444-8997-4e67-ac8f-34ef62ed256f))
-    (pin "2" (uuid 8382036f-5dad-4868-9e34-16e3a9fe1d1d))
+    (pin "11" (uuid b6c48fd0-232e-4a35-8cd5-bfcd8fa2ad20))
+    (pin "4" (uuid 19827026-e925-4bb1-9ed5-afc730624bb2))
+    (pin "9" (uuid 24cd70aa-17ff-48c4-81ad-9877abdc2439))
+    (pin "14" (uuid 91ac6bc1-ad5e-499f-aac6-64831bb390ac))
+    (pin "13" (uuid 646695ed-05e0-47f9-b4f3-db98b9651997))
+    (pin "3" (uuid ae06658a-c1ba-4383-a9f1-3537f424b5a8))
+    (pin "18" (uuid 3dd8b007-2fe5-4ab2-a092-dd184311d397))
+    (pin "12" (uuid 9aada98c-4212-48e4-abd5-f14c64b64d56))
+    (pin "16" (uuid 91e8114f-d736-46d2-ad2e-bd420a9bf4b4))
+    (pin "1" (uuid f79e075c-4410-41fe-86e9-6b19d0f81838))
+    (pin "15" (uuid deb2c7fd-c0e4-406f-b4f5-23cd272fd2e0))
+    (pin "10" (uuid e29903fa-96d6-4f97-a7dd-f65e3e11b619))
+    (pin "17" (uuid 513604fe-7644-44b9-a056-f28d199e5222))
+    (pin "2" (uuid 5044786a-d4b3-48b5-ba37-680e6d47c04d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "IC1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "IC1") (unit 1)
         )
       )
@@ -3971,7 +3939,7 @@
   (symbol (lib_id "power:+3.3V") (at 259.08 210.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0eb0cb50-5ad5-4f83-9d16-1ed1b9750f35)
-    (property "Reference" "#PWR013" (at 259.08 214.63 0)
+    (property "Reference" "#PWR093" (at 259.08 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 259.08 207.01 0)
@@ -3983,16 +3951,11 @@
     (property "Datasheet" "" (at 259.08 210.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c24d2fea-d843-4d90-8bb2-9f97c5609427))
+    (pin "1" (uuid 5d7ea0bd-f5aa-42fb-9403-3777fd515d58))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR013") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR049") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -4001,7 +3964,7 @@
   (symbol (lib_id "Device:R") (at 228.6 165.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0f196867-0050-47c7-9fba-c648564581ff)
-    (property "Reference" "R99" (at 231.14 163.8299 0)
+    (property "Reference" "R63" (at 231.14 163.8299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 231.14 166.3699 0)
@@ -4013,17 +3976,12 @@
     (property "Datasheet" "~" (at 228.6 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd33290f-7d51-4b10-887a-1ef3b1327d64))
-    (pin "2" (uuid 1cec7f9a-7691-4a77-b62e-3ec5ffcedf31))
+    (pin "1" (uuid ea67a4ee-c6bb-498e-98d7-55a1c9bc799d))
+    (pin "2" (uuid 793be614-3f40-42b2-85b4-7ceb7dbaa29e))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R99") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R23") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R63") (unit 1)
         )
       )
     )
@@ -4032,7 +3990,7 @@
   (symbol (lib_id "power:+BATT") (at 147.32 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1145f6f6-c4f1-4ccd-b0ec-832d928f7d0f)
-    (property "Reference" "#PWR037" (at 147.32 74.93 0)
+    (property "Reference" "#PWR077" (at 147.32 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 151.13 68.58 0)
@@ -4044,16 +4002,11 @@
     (property "Datasheet" "" (at 147.32 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dfec9eda-209c-49ad-8685-ef0f46e67c2d))
+    (pin "1" (uuid fd70cabe-7eca-4ea7-b395-c69d92c1886f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR037") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR034") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -4062,7 +4015,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 292.1 205.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 116d959a-4a63-4df8-bfb6-1697e59ac5dd)
-    (property "Reference" "TP1" (at 292.1 213.36 0)
+    (property "Reference" "TP2" (at 292.1 213.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 292.1 210.82 0)
@@ -4074,15 +4027,10 @@
     (property "Datasheet" "~" (at 287.02 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2e693e73-e4b5-459d-ab65-786fbacaf6e3))
+    (pin "1" (uuid 59a17b06-4bf8-4cfb-88bb-d87cd562aba0))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "TP1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "TP2") (unit 1)
         )
       )
@@ -4092,7 +4040,7 @@
   (symbol (lib_id "power:GND") (at 116.84 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 13b04d1b-86e6-4413-b7f0-3da9ae753440)
-    (property "Reference" "#PWR099" (at 116.84 87.63 0)
+    (property "Reference" "#PWR064" (at 116.84 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 86.36 0)
@@ -4104,16 +4052,11 @@
     (property "Datasheet" "" (at 116.84 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0b62f92d-2105-4b84-99f2-40e3be9da9be))
+    (pin "1" (uuid 0c3cf551-0a23-4389-a68d-e214b34bbb0c))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR099") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR022") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR064") (unit 1)
         )
       )
     )
@@ -4122,7 +4065,7 @@
   (symbol (lib_id "Device:R") (at 78.74 228.6 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 15d4f73b-518c-402c-96c4-199f394ad987)
-    (property "Reference" "R64" (at 81.28 231.14 90)
+    (property "Reference" "R42" (at 81.28 231.14 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 81.28 226.06 90)
@@ -4134,12 +4077,12 @@
     (property "Datasheet" "~" (at 78.74 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 64d681bd-77ed-48f8-8e52-3c4dd9c12d13))
-    (pin "2" (uuid ed555f86-2c30-4fec-a7ed-4eb1da32469e))
+    (pin "1" (uuid 4d93c704-9c4f-4cb2-aca9-c652bb013952))
+    (pin "2" (uuid 8ec5d510-026d-45fc-8889-0374ff85c6bb))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R64") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -4148,7 +4091,7 @@
   (symbol (lib_id "power:+5V") (at 190.5 200.66 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b6ea609-e67d-4bb3-98d4-038f437f08e0)
-    (property "Reference" "#PWR0119" (at 190.5 204.47 0)
+    (property "Reference" "#PWR083" (at 190.5 204.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 190.5 196.85 0)
@@ -4160,16 +4103,11 @@
     (property "Datasheet" "" (at 190.5 200.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 44e34a80-dcd4-490b-afa1-20253308afad))
+    (pin "1" (uuid 1be97aff-b430-4783-9db9-46569cb0436f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0119") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR039") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -4178,7 +4116,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 347.98 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c04221c-4440-466b-9a4e-26118dd39c15)
-    (property "Reference" "C39" (at 350.52 119.38 0)
+    (property "Reference" "C35" (at 350.52 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 350.52 121.92 0)
@@ -4190,12 +4128,12 @@
     (property "Datasheet" "~" (at 347.98 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c0531428-e33d-4c64-b1b8-607c74a38478))
-    (pin "2" (uuid e98ce42e-9125-439e-b149-bed4ae720445))
+    (pin "1" (uuid ca152661-8c53-4459-abc6-3162902f5f3d))
+    (pin "2" (uuid 32c68be4-f822-459b-ae07-a4cedb8eb1cc))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C39") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C35") (unit 1)
         )
       )
     )
@@ -4204,7 +4142,7 @@
   (symbol (lib_id "power:+3.3V") (at 327.66 220.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1f6e88de-cbea-4491-a6f0-a93701f5f284)
-    (property "Reference" "#PWR025" (at 327.66 224.79 0)
+    (property "Reference" "#PWR0112" (at 327.66 224.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 327.66 217.17 0)
@@ -4216,16 +4154,36 @@
     (property "Datasheet" "" (at 327.66 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3a5a43a9-9423-4a74-b372-a363144e6e99))
+    (pin "1" (uuid 65ccc695-40cd-4679-a71a-f95742753516))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR025") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0112") (unit 1)
         )
       )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR062") (unit 1)
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 147.32 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 20e73947-a0a9-4b95-b36d-45d3282db9fe)
+    (property "Reference" "#PWR078" (at 147.32 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 151.13 81.28 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 147.32 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 147.32 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 278b2693-88a6-44b6-bbc0-eba4fab59528))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR078") (unit 1)
         )
       )
     )
@@ -4234,7 +4192,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 335.28 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21728e2a-470d-470a-9113-c17b69d37f73)
-    (property "Reference" "C38" (at 337.82 119.38 0)
+    (property "Reference" "C33" (at 337.82 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 337.82 121.92 0)
@@ -4246,12 +4204,37 @@
     (property "Datasheet" "~" (at 335.28 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b2dba3af-b89f-479b-bee6-1680b937afa1))
-    (pin "2" (uuid 675868bf-91d5-4435-819f-dfec9abd8e20))
+    (pin "1" (uuid 34ae21e9-1a8f-497f-a890-4e090a30c283))
+    (pin "2" (uuid 5ecf5f1e-991a-488d-b408-992566a7b8e5))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C38") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C33") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 147.32 109.22 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 21c0b1cb-5756-46c4-b716-746c17ea1afe)
+    (property "Reference" "#PWR080" (at 147.32 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 151.13 106.68 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 147.32 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 147.32 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6ed705ab-c63a-415a-879a-62b5794f5984))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -4260,7 +4243,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 322.58 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2590a6cf-3254-474c-b8f5-31254a6af40a)
-    (property "Reference" "C37" (at 325.12 119.38 0)
+    (property "Reference" "C31" (at 325.12 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 325.12 121.92 0)
@@ -4272,12 +4255,12 @@
     (property "Datasheet" "~" (at 322.58 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a7c5f7df-0d6b-425c-b476-bc9443edcf78))
-    (pin "2" (uuid 7b1c85fa-73d1-42c7-8930-62e992a58590))
+    (pin "1" (uuid 46ce381e-78d6-45e0-97ee-a707da6f3abb))
+    (pin "2" (uuid 97669fa9-d0b0-4491-b167-9d3f606cf9cf))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C37") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C31") (unit 1)
         )
       )
     )
@@ -4286,7 +4269,7 @@
   (symbol (lib_id "power:+BATT") (at 132.08 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 26ea2092-63fc-40c2-81cf-05f96d42711c)
-    (property "Reference" "#PWR030" (at 132.08 49.53 0)
+    (property "Reference" "#PWR072" (at 132.08 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 135.89 43.18 0)
@@ -4298,16 +4281,11 @@
     (property "Datasheet" "" (at 132.08 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 75736e2d-1a92-4624-ba9f-217e133ea47b))
+    (pin "1" (uuid a8513883-674c-4f74-9635-99f6bca4d244))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR030") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR030") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -4316,7 +4294,7 @@
   (symbol (lib_name "D_Schottky_3") (lib_id "Device:D_Schottky") (at 134.62 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 29daf828-fdec-4e56-ae91-1098987467d9)
-    (property "Reference" "D1" (at 134.62 124.46 0)
+    (property "Reference" "D4" (at 134.62 124.46 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N5819WS" (at 134.62 127 0)
@@ -4328,17 +4306,12 @@
     (property "Datasheet" "~" (at 134.62 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9850b5d0-f349-4a12-a4dd-fe6a0d79e23f))
-    (pin "2" (uuid 5dc5c607-f4c3-4fe5-b47a-3922f07918a2))
+    (pin "1" (uuid b7c0d26e-61a6-44a1-98cb-a2e50162bfdf))
+    (pin "2" (uuid 8c05aadc-b65b-4733-8d94-0332daba710e))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D2") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -4347,7 +4320,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 322.58 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ed0d551-b0c0-49e5-9545-4c45dc0cdb1a)
-    (property "Reference" "C25" (at 325.12 142.24 0)
+    (property "Reference" "C32" (at 325.12 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 325.12 144.78 0)
@@ -4359,12 +4332,12 @@
     (property "Datasheet" "~" (at 322.58 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4ccfefd6-1e08-4c77-af9f-5d05160638e6))
-    (pin "2" (uuid 2ace9032-2de7-42aa-b4bb-e8319131a651))
+    (pin "1" (uuid 29cc1f4c-f39a-4ccf-9ce6-4e88f9656a80))
+    (pin "2" (uuid ca0f4cdd-9c95-40a6-8056-4377491b615d))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C25") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C32") (unit 1)
         )
       )
     )
@@ -4373,7 +4346,7 @@
   (symbol (lib_id "power:GNDD") (at 353.06 195.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f7b4958-a34a-4bc9-ab09-5caf7a47c137)
-    (property "Reference" "#PWR0124" (at 353.06 201.93 0)
+    (property "Reference" "#PWR0119" (at 353.06 201.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 353.06 199.39 0)
@@ -4385,16 +4358,11 @@
     (property "Datasheet" "" (at 353.06 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f074967-4fdd-4a9c-bb29-4068ea6a25c8))
+    (pin "1" (uuid 926664bc-d171-41cd-ae5a-8baf73152b03))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0124") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR065") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0119") (unit 1)
         )
       )
     )
@@ -4403,7 +4371,7 @@
   (symbol (lib_id "Device:R") (at 215.9 86.36 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 356f31a9-df48-4d71-b4d3-23263df8d326)
-    (property "Reference" "R12" (at 214.63 85.09 0)
+    (property "Reference" "R61" (at 214.63 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 214.63 87.63 0)
@@ -4415,17 +4383,12 @@
     (property "Datasheet" "~" (at 215.9 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6ab8f807-d5e8-41fa-b002-d22a15b31955))
-    (pin "2" (uuid 2675fb6b-bd03-40e8-89f6-4337bef10e65))
+    (pin "1" (uuid 3a5176da-ee97-4b1b-b341-583186f199ac))
+    (pin "2" (uuid 760f6c81-e39c-4d90-82ac-6773e7a9a959))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R12") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R21") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R61") (unit 1)
         )
       )
     )
@@ -4434,7 +4397,7 @@
   (symbol (lib_id "Device:R") (at 223.52 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 37cd7d69-b788-4912-b406-8ef41e970f8a)
-    (property "Reference" "R2" (at 226.06 43.18 90)
+    (property "Reference" "R62" (at 226.06 43.18 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 226.06 40.8686 90)
@@ -4446,17 +4409,12 @@
     (property "Datasheet" "~" (at 223.52 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bdd761e5-a898-479e-becf-0de686fe8702))
-    (pin "2" (uuid 317a400c-8b2a-4368-b50d-e6514c89cc76))
+    (pin "1" (uuid 7e19b1d4-8ffe-41f6-b557-97a5f3b9f55e))
+    (pin "2" (uuid 8a06e762-419b-45fb-b9fd-5eff5c98336f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R2") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R22") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R62") (unit 1)
         )
       )
     )
@@ -4465,7 +4423,7 @@
   (symbol (lib_id "power:GNDPWR") (at 297.18 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 39ad9cc7-f8b8-4fc9-9945-5cb0c4ec5a1b)
-    (property "Reference" "#PWR016" (at 297.18 152.4 0)
+    (property "Reference" "#PWR099" (at 297.18 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 297.053 151.13 0)
@@ -4477,16 +4435,11 @@
     (property "Datasheet" "" (at 297.18 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 07be0b5f-26eb-4452-86e6-17869ad59c07))
+    (pin "1" (uuid b69c0096-e2c4-4a2e-95ff-b9cf3bf9e571))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR016") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR053") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -4495,7 +4448,7 @@
   (symbol (lib_name "Q_NMOS_GSD_1") (lib_id "Device:Q_NMOS_GSD") (at 213.36 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a6d6148-056d-43a6-be37-b9f9bfe3684c)
-    (property "Reference" "Q4" (at 205.74 99.06 0)
+    (property "Reference" "Q13" (at 205.74 99.06 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BSS138" (at 205.74 101.6 0)
@@ -4507,18 +4460,13 @@
     (property "Datasheet" "~" (at 213.36 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2881ae60-2141-46eb-b24a-7322904e1eae))
-    (pin "2" (uuid 58a3c615-8981-4866-a9b9-226893e2e0c9))
-    (pin "3" (uuid 180f4854-6d8d-4ad5-b508-3599b3e93594))
+    (pin "1" (uuid c599855b-3765-4b8f-a5bf-7f831f6efdd9))
+    (pin "2" (uuid d50fb371-149f-41b5-b951-d4a8d9457ae3))
+    (pin "3" (uuid 55c0b3c2-f721-4b17-a0bd-673cc2bc72d2))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q4") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q8") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q13") (unit 1)
         )
       )
     )
@@ -4527,7 +4475,7 @@
   (symbol (lib_id "Device:R") (at 320.04 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a97f138-b030-4fab-b980-31a8138f4ff5)
-    (property "Reference" "R17" (at 320.04 55.88 90)
+    (property "Reference" "R69" (at 320.04 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "75k" (at 320.04 58.42 90)
@@ -4539,17 +4487,38 @@
     (property "Datasheet" "~" (at 320.04 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1ec741c2-43fd-45c3-9a51-29e9d0e275c8))
-    (pin "2" (uuid 8dd9462d-3988-4822-8de0-c3df8e519dbc))
+    (pin "1" (uuid 607bdc37-73c6-404d-a731-028c75cce4d6))
+    (pin "2" (uuid cd4ec338-df6c-467d-bfd3-c43d8bf24881))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R17") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R69") (unit 1)
         )
       )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R29") (unit 1)
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x02_Male") (at 137.16 93.98 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3bfa9edc-9d83-48a9-ac96-d1a7b243420c)
+    (property "Reference" "J13" (at 137.795 88.9 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x02_Male" (at 137.795 91.44 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_Molex:Molex_SPOX_5267-02A_1x02_P2.50mm_Vertical" (at 137.16 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 137.16 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4a060790-e407-4d55-a84c-ce983a6e08fd))
+    (pin "2" (uuid 0b94d76b-3888-4949-a882-b9e63e8ccaaf))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J13") (unit 1)
         )
       )
     )
@@ -4558,7 +4527,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 109.22 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3e7ab611-4156-482e-9844-fc7c8a93705b)
-    (property "Reference" "J11" (at 109.855 88.9 0)
+    (property "Reference" "J9" (at 109.855 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Male" (at 109.855 91.44 0)
@@ -4570,17 +4539,12 @@
     (property "Datasheet" "~" (at 109.22 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0ab1cd44-9789-4748-b739-fd5dfcbda984))
-    (pin "2" (uuid 1e563e02-f4f9-48b0-bb44-ede0d7996dca))
+    (pin "1" (uuid 35de4269-5f49-498d-8f85-1d2ddee992ad))
+    (pin "2" (uuid eb717152-1c79-4925-abe9-6936e17197f6))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "J11") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "J4") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -4589,7 +4553,7 @@
   (symbol (lib_id "Device:C") (at 200.66 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3fc6d094-5bb2-4af9-a104-1d7d7fc20b09)
-    (property "Reference" "C3" (at 203.2 74.93 0)
+    (property "Reference" "C23" (at 203.2 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 203.2 77.47 0)
@@ -4601,17 +4565,12 @@
     (property "Datasheet" "~" (at 200.66 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 61889836-19a7-435d-bcdd-5eb1377d8943))
-    (pin "2" (uuid 807d7e7e-918e-466e-9dfe-fd06df9f3f8f))
+    (pin "1" (uuid 8b0d32aa-6188-459f-a815-db8cd2a41781))
+    (pin "2" (uuid 4dc148b6-ae1d-48d4-b2b9-e96cfe3cc97e))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C3") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C19") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -4620,7 +4579,7 @@
   (symbol (lib_id "power:VDD") (at 228.6 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 40d4549b-547d-473a-a123-7a7287801407)
-    (property "Reference" "#PWR09" (at 228.6 72.39 0)
+    (property "Reference" "#PWR087" (at 228.6 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 228.6 64.77 0)
@@ -4632,16 +4591,11 @@
     (property "Datasheet" "" (at 228.6 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b3489e45-746f-4084-97cb-7f59de5ff278))
+    (pin "1" (uuid bfb162cd-a304-421f-92cc-c744de500672))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR09") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR043") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -4650,7 +4604,7 @@
   (symbol (lib_id "power:+BATT") (at 347.98 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 47179756-0d61-47a7-90e4-d2477e3e5fa7)
-    (property "Reference" "#PWR0120" (at 347.98 118.11 0)
+    (property "Reference" "#PWR0117" (at 347.98 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 351.79 111.76 0)
@@ -4662,11 +4616,11 @@
     (property "Datasheet" "" (at 347.98 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 58138fdb-4c06-4ec8-940b-7f6954be46d6))
+    (pin "1" (uuid 8116efc3-3b61-4041-b06c-da5ddba2a7b5))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0120") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0117") (unit 1)
         )
       )
     )
@@ -4675,7 +4629,7 @@
   (symbol (lib_id "Device:R") (at 142.24 218.44 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 484ba250-4824-4c00-9b9d-f3ed6e51ce40)
-    (property "Reference" "R93" (at 144.78 217.1699 0)
+    (property "Reference" "R48" (at 144.78 217.1699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 144.78 219.7099 0)
@@ -4687,17 +4641,12 @@
     (property "Datasheet" "~" (at 142.24 218.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b388311c-2a54-4ebf-9f61-879366b6d599))
-    (pin "2" (uuid 1bdcd780-d3cb-429f-92d9-8160e50e732b))
+    (pin "1" (uuid dfe3732b-51f9-4edf-b479-cd81fc909458))
+    (pin "2" (uuid cf99934f-0cc5-414a-9211-59e8f72af8f0))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R93") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R8") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R48") (unit 1)
         )
       )
     )
@@ -4718,26 +4667,26 @@
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 67.31 210.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "A1" (uuid b9d79892-e85d-4aec-9b0c-9e41b28c84db))
-    (pin "A12" (uuid 2538a9d1-8350-45d8-bde7-aa5e724c1ec4))
-    (pin "A4" (uuid 737aab5f-37fb-42ff-ae43-5e97e4141f4e))
-    (pin "A5" (uuid cbc7c6a5-3bd0-43de-a93e-2bd40f91c510))
-    (pin "A6" (uuid d9271165-b4f0-418d-ab3e-9b1699150262))
-    (pin "A7" (uuid 54fae627-6e54-4655-b0dd-4600f459c4a3))
-    (pin "A8" (uuid 67f37fe6-a0b3-4b7a-9a7d-0897f3508881))
-    (pin "A9" (uuid d181d41b-0c38-4bee-9828-a57cf1d77e6d))
-    (pin "B1" (uuid 6eab856e-ebbf-473a-babc-f33af9e5c50f))
-    (pin "B12" (uuid db6905d0-96c4-4320-b326-40d986e823a2))
-    (pin "B4" (uuid 873c44e4-f9c1-44f6-8fda-267f4a9efef9))
-    (pin "B5" (uuid 160d039e-536a-403f-b62d-47bf504bc545))
-    (pin "B6" (uuid 31843885-6138-434b-a3bf-e8f173ec5b3f))
-    (pin "B7" (uuid 955ea9b4-0cb4-454d-a703-22ef0e101e68))
-    (pin "B8" (uuid 65ba8a9f-e284-480f-899b-7e3994c2b0d9))
-    (pin "B9" (uuid 4f200b86-5ef6-4719-ac2f-b56dedb9d96a))
-    (pin "S1" (uuid 382bd2d5-7376-451f-914a-cf01bb81bc2a))
+    (pin "A1" (uuid 4597de73-0e1e-4cfd-ab68-bf40f54b29a4))
+    (pin "A12" (uuid e4f62c0b-cebe-4b2c-bf80-de12fee85176))
+    (pin "A4" (uuid c5f310eb-c5a5-462f-9251-05688cfff41d))
+    (pin "A5" (uuid 21c00522-1df3-4a79-9908-ec0dbad69739))
+    (pin "A6" (uuid 94fd4341-56b1-4a21-9529-298f0b1c7600))
+    (pin "A7" (uuid 5b88a567-13df-419a-801d-62b7465a98cb))
+    (pin "A8" (uuid d00453b1-9c02-4c3d-8283-5e1e9acd3ecd))
+    (pin "A9" (uuid d1d49874-5793-4ecf-88fc-afab917ddbc5))
+    (pin "B1" (uuid 33814ee1-3503-4013-9616-04643098d0a7))
+    (pin "B12" (uuid 485e61a4-fc5b-47cb-ae1f-6e2d33d9b277))
+    (pin "B4" (uuid 3468992d-6d9b-4320-9390-18f947b7c47b))
+    (pin "B5" (uuid 0dbda537-3805-47f5-99d5-cf70a96cc753))
+    (pin "B6" (uuid 7bda2722-c9ff-4537-88d2-8b9f0db2a977))
+    (pin "B7" (uuid 87935ce6-82b1-4a3f-a283-5bfcc3ccfec6))
+    (pin "B8" (uuid c5173467-ed07-48a2-89c5-b841738b8cba))
+    (pin "B9" (uuid db3b98ec-5a44-4e23-aa90-184628481fba))
+    (pin "S1" (uuid 76e256a1-2af9-42fa-b088-78dafed9ccfa))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "J6") (unit 1)
         )
       )
@@ -4747,7 +4696,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 335.28 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a8156f7-85cc-4d0b-b3b8-edba61d66fe3)
-    (property "Reference" "C26" (at 337.82 142.24 0)
+    (property "Reference" "C34" (at 337.82 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 337.82 144.78 0)
@@ -4759,12 +4708,12 @@
     (property "Datasheet" "~" (at 335.28 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6c06f525-9bbc-448d-b7c8-36b2fc87cb64))
-    (pin "2" (uuid 68041f46-dcdf-48d1-a6d7-0181ec40f55b))
+    (pin "1" (uuid 823c9bf4-c4dc-48c5-98d3-4691c1f9d890))
+    (pin "2" (uuid f6effd5c-0a5c-4ce8-a439-aef42b45e8af))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C26") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C34") (unit 1)
         )
       )
     )
@@ -4773,7 +4722,7 @@
   (symbol (lib_id "power:GNDD") (at 109.22 236.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4b88f57e-7491-44d2-a75d-957f25216109)
-    (property "Reference" "#PWR0118" (at 109.22 242.57 0)
+    (property "Reference" "#PWR062" (at 109.22 242.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 109.22 240.03 0)
@@ -4785,16 +4734,11 @@
     (property "Datasheet" "" (at 109.22 236.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d354a564-edf5-4302-8937-9175fc5247aa))
+    (pin "1" (uuid 6183459b-c2db-4bde-bd91-aee73392464f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0118") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR020") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -4803,7 +4747,7 @@
   (symbol (lib_id "power:GNDD") (at 353.06 220.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 50cc7235-5e4b-4858-a418-45d162043a5a)
-    (property "Reference" "#PWR029" (at 353.06 227.33 0)
+    (property "Reference" "#PWR0121" (at 353.06 227.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 353.06 224.79 0)
@@ -4815,16 +4759,11 @@
     (property "Datasheet" "" (at 353.06 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a3e6a066-59c6-4de8-bf12-3cd4a409803b))
+    (pin "1" (uuid 47f5d474-0056-4665-be29-09df7b80045f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR029") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR067") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0121") (unit 1)
         )
       )
     )
@@ -4833,7 +4772,7 @@
   (symbol (lib_id "power:GNDD") (at 223.52 172.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 513f0432-448b-467d-8c59-36908726277e)
-    (property "Reference" "#PWR0120" (at 223.52 179.07 0)
+    (property "Reference" "#PWR086" (at 223.52 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 223.52 176.53 0)
@@ -4845,16 +4784,11 @@
     (property "Datasheet" "" (at 223.52 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f5c408a9-ffab-49d7-99c0-22f9f6ea78d1))
+    (pin "1" (uuid 020b2c95-eaac-468e-b3d1-e0376e25255a))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0120") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR042") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR086") (unit 1)
         )
       )
     )
@@ -4863,7 +4797,7 @@
   (symbol (lib_id "Device:C") (at 167.64 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 52a279c7-7bc1-42d4-ad06-46ea46cb88d9)
-    (property "Reference" "C2" (at 167.64 149.86 0)
+    (property "Reference" "C22" (at 167.64 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22uF" (at 167.64 152.4 0)
@@ -4875,17 +4809,12 @@
     (property "Datasheet" "~" (at 167.64 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 34cee040-aa15-4759-a8ca-3bc61c91e92e))
-    (pin "2" (uuid 50e3ac99-8469-4ce2-b5fd-43bbc0de6b08))
+    (pin "1" (uuid 2c582c52-de24-464e-9985-ad9325d62cc0))
+    (pin "2" (uuid 912e72cf-d6b0-4b08-9b75-5e2413b8fc9c))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C2") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C18") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -4894,7 +4823,7 @@
   (symbol (lib_id "power:+5V") (at 281.94 203.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 535669bf-793f-45f4-b3a7-a9003e5565b8)
-    (property "Reference" "#PWR06" (at 281.94 207.01 0)
+    (property "Reference" "#PWR094" (at 281.94 207.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 281.94 199.39 0)
@@ -4906,16 +4835,11 @@
     (property "Datasheet" "" (at 281.94 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b99762ad-6bbe-4408-9902-d2511629cfb2))
+    (pin "1" (uuid aab8804b-7a47-4a95-9ba9-a3dabf470d8d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR050") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -4924,7 +4848,7 @@
   (symbol (lib_id "power:+5V") (at 327.66 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 542b1078-2999-48bc-8401-7decae0b6513)
-    (property "Reference" "#PWR024" (at 327.66 212.09 0)
+    (property "Reference" "#PWR0111" (at 327.66 212.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 327.66 204.47 0)
@@ -4936,16 +4860,11 @@
     (property "Datasheet" "" (at 327.66 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 49d5e7f9-7ae7-410f-8261-443d6c40f563))
+    (pin "1" (uuid 244b4508-08ba-4941-9380-7fa55a220f1a))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR024") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR061") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0111") (unit 1)
         )
       )
     )
@@ -4954,7 +4873,7 @@
   (symbol (lib_id "Device:R") (at 116.84 143.51 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 54773414-2648-49fd-a805-df0a5b9132a1)
-    (property "Reference" "R3" (at 118.11 142.24 0)
+    (property "Reference" "R45" (at 118.11 142.24 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "200k" (at 118.11 144.78 0)
@@ -4966,17 +4885,12 @@
     (property "Datasheet" "~" (at 116.84 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6525f3f-870b-463b-84f2-2eeddbc1ca58))
-    (pin "2" (uuid f28968df-9758-4a4d-94be-2628a71545b5))
+    (pin "1" (uuid c77a9452-1b14-40f5-b6e9-cbecd1a9fb8f))
+    (pin "2" (uuid 59bb9e1b-051c-4b58-8383-f63606ef8b23))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R3") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R5") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -4985,7 +4899,7 @@
   (symbol (lib_id "power:+5V") (at 322.58 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 557a7ea2-14c7-4a5c-9103-7382744dbf63)
-    (property "Reference" "#PWR022" (at 322.58 140.97 0)
+    (property "Reference" "#PWR0109" (at 322.58 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 322.58 133.35 0)
@@ -4997,16 +4911,11 @@
     (property "Datasheet" "" (at 322.58 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6acbf7d6-7ff4-46cb-9126-939ca12fdded))
+    (pin "1" (uuid ff4c3ab8-afd4-4023-a22a-43fe50a2b6d9))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR059") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -5015,7 +4924,7 @@
   (symbol (lib_id "power:VDD") (at 297.18 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 56150a6c-91d6-4e64-8e43-638d1081b061)
-    (property "Reference" "#PWR015" (at 297.18 140.97 0)
+    (property "Reference" "#PWR098" (at 297.18 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 297.18 133.35 0)
@@ -5027,16 +4936,11 @@
     (property "Datasheet" "" (at 297.18 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2ee2697c-bdd6-4d08-8f3e-a6ce9cd10fdc))
+    (pin "1" (uuid c3f2b336-bd4a-45b0-814f-855d00e94709))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR015") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR052") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -5045,7 +4949,7 @@
   (symbol (lib_id "power:GND") (at 144.78 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5880c554-3f4b-49a1-ac4f-e59e75861bcf)
-    (property "Reference" "#PWR0115" (at 144.78 74.93 0)
+    (property "Reference" "#PWR073" (at 144.78 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 73.66 0)
@@ -5057,16 +4961,11 @@
     (property "Datasheet" "" (at 144.78 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0d4561e4-5475-4c47-bf0d-39e238e3910d))
+    (pin "1" (uuid 4decda3a-e0ed-4155-b62c-34f565afc6d6))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0115") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR031") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -5075,7 +4974,7 @@
   (symbol (lib_id "power:GND") (at 116.84 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5dbb20c8-b768-428c-bb17-e27888116a7a)
-    (property "Reference" "#PWR0114" (at 116.84 113.03 0)
+    (property "Reference" "#PWR066" (at 116.84 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 111.76 0)
@@ -5087,16 +4986,11 @@
     (property "Datasheet" "" (at 116.84 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cad3b512-6b20-4cf1-86df-1cffca4da65d))
+    (pin "1" (uuid 192590b5-9473-422f-b786-03867c6e8c7d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0114") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR024") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -5105,7 +4999,7 @@
   (symbol (lib_id "Device:R") (at 185.42 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6129e16f-45f8-4849-8e85-a7d9c32d9354)
-    (property "Reference" "R7" (at 186.69 95.25 0)
+    (property "Reference" "R56" (at 186.69 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 186.69 97.79 0)
@@ -5117,17 +5011,12 @@
     (property "Datasheet" "~" (at 185.42 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 690bf102-8169-458a-b0e7-987675bf20ab))
-    (pin "2" (uuid df32bb3f-9875-4d78-9cfe-7613f806a1be))
+    (pin "1" (uuid 3de696cb-9d9f-459a-a8ad-90dd58506d2b))
+    (pin "2" (uuid 1f6cb044-f64f-451b-a671-0081b83ba980))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R7") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R16") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R56") (unit 1)
         )
       )
     )
@@ -5136,7 +5025,7 @@
   (symbol (lib_id "power:+BATT") (at 119.38 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 64605dbd-6115-4a67-a227-73a99ffbb2fb)
-    (property "Reference" "#PWR034" (at 119.38 113.03 0)
+    (property "Reference" "#PWR070" (at 119.38 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 123.19 106.68 0)
@@ -5148,16 +5037,11 @@
     (property "Datasheet" "" (at 119.38 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 167eae05-85fa-412c-81fa-d9e1224a031f))
+    (pin "1" (uuid 5352e9e3-294a-4575-9766-2b4bab568546))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR034") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR028") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -5166,7 +5050,7 @@
   (symbol (lib_id "Device:R") (at 124.46 218.44 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6499332b-1721-4ec0-b01d-ac058436f45b)
-    (property "Reference" "R91" (at 127 219.7101 0)
+    (property "Reference" "R46" (at 127 219.7101 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 127 217.1701 0)
@@ -5178,17 +5062,12 @@
     (property "Datasheet" "~" (at 124.46 218.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1c55befc-20f4-4d77-a799-4ae61cfae028))
-    (pin "2" (uuid 5de5d6e8-ea28-4da2-8783-ba8ff571350d))
+    (pin "1" (uuid 9da62e6d-d967-4f14-b76e-57a496b4f3f2))
+    (pin "2" (uuid 7a18f1f9-8013-4bfd-bff4-3641e348c18f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R91") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R6") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R46") (unit 1)
         )
       )
     )
@@ -5197,7 +5076,7 @@
   (symbol (lib_id "power:GND") (at 347.98 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 66eae3f0-56f2-470f-97ce-d9c516080682)
-    (property "Reference" "#PWR0121" (at 347.98 130.81 0)
+    (property "Reference" "#PWR0118" (at 347.98 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 347.98 128.27 0)
@@ -5209,11 +5088,11 @@
     (property "Datasheet" "" (at 347.98 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5f146c0c-c5ac-4fd4-bd28-2c576f371128))
+    (pin "1" (uuid e2bb0f92-565a-4104-9d99-ccbd8c2870bf))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0121") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0118") (unit 1)
         )
       )
     )
@@ -5222,7 +5101,7 @@
   (symbol (lib_id "power:GNDD") (at 218.44 231.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 67028038-5690-4480-918e-ecc8d66a7cb9)
-    (property "Reference" "#PWR08" (at 218.44 237.49 0)
+    (property "Reference" "#PWR085" (at 218.44 237.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 218.44 234.95 0)
@@ -5234,16 +5113,11 @@
     (property "Datasheet" "" (at 218.44 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 619287d6-622a-4697-a262-1d754be8180d))
+    (pin "1" (uuid 76506ea6-477a-4dd4-aea6-cae9c28843b6))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR041") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR085") (unit 1)
         )
       )
     )
@@ -5252,7 +5126,7 @@
   (symbol (lib_id "Device:C") (at 81.28 203.2 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 677c7747-ff61-478c-becb-af0fd96c9276)
-    (property "Reference" "C40" (at 86.36 200.66 0)
+    (property "Reference" "C19" (at 86.36 200.66 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10uF" (at 88.9 203.2 0)
@@ -5264,12 +5138,12 @@
     (property "Datasheet" "~" (at 81.28 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9ec322e1-02ff-4df6-bcd0-4e03e18b4b22))
-    (pin "2" (uuid 177c45ff-91ab-4b6f-8485-707def517749))
+    (pin "1" (uuid 9fdaf3f2-63af-4e01-89fd-692f9f454c72))
+    (pin "2" (uuid 90648375-ec48-4158-87bf-cf353508599a))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C40") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -5278,7 +5152,7 @@
   (symbol (lib_id "Device:R") (at 213.36 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67aea94f-bf76-425d-999f-63748db2fa54)
-    (property "Reference" "R1" (at 215.9 43.18 90)
+    (property "Reference" "R60" (at 215.9 43.18 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 215.9 40.8686 90)
@@ -5290,17 +5164,12 @@
     (property "Datasheet" "~" (at 213.36 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b86e0425-9b47-4fb7-ad06-7cd62b8b4679))
-    (pin "2" (uuid ed72ea01-8a75-47aa-bd06-890711e4f118))
+    (pin "1" (uuid fe834e97-de48-4a58-910d-d654a56ca1e9))
+    (pin "2" (uuid 9f26f178-7c72-4410-ad51-9fffd08a5461))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R20") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R60") (unit 1)
         )
       )
     )
@@ -5309,7 +5178,7 @@
   (symbol (lib_id "Switch:SW_SPDT") (at 203.2 40.64 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6baf8808-6912-437a-a88d-9d103a70c535)
-    (property "Reference" "SW1" (at 201.93 45.72 0)
+    (property "Reference" "SW4" (at 201.93 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_SPDT_White" (at 201.93 48.26 0)
@@ -5321,18 +5190,13 @@
     (property "Datasheet" "~" (at 203.2 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7e318c45-b7b1-4a32-9aa7-d1f39a670f41))
-    (pin "2" (uuid cef39627-735e-45cc-88ca-136ba6c8d13e))
-    (pin "3" (uuid 3bfbd579-f15d-4204-9409-1c365ce75ae5))
+    (pin "1" (uuid 9e3fa04e-8682-45aa-868a-d2e074488603))
+    (pin "2" (uuid de354f38-42ec-4661-96f5-c65be169d1f5))
+    (pin "3" (uuid 6067c92f-6c87-4dc8-b9df-5cc32bcc3388))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "SW1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "SW2") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "SW4") (unit 1)
         )
       )
     )
@@ -5341,7 +5205,7 @@
   (symbol (lib_id "Device:R") (at 149.86 228.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c6f6d05-eb71-47b8-ba03-46bc5f225ef8)
-    (property "Reference" "R94" (at 152.4 227.3299 0)
+    (property "Reference" "R49" (at 152.4 227.3299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 152.4 229.8699 0)
@@ -5353,17 +5217,12 @@
     (property "Datasheet" "~" (at 149.86 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f240b8f9-46d9-4fad-a663-01a486786aa1))
-    (pin "2" (uuid a609f00d-a64d-4728-9ec0-29643d723a94))
+    (pin "1" (uuid 81d9a3e1-814b-42d3-a536-5a90a4b3f260))
+    (pin "2" (uuid 71055d6a-c00c-42e7-8807-8475a4727843))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R94") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R9") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R49") (unit 1)
         )
       )
     )
@@ -5372,7 +5231,7 @@
   (symbol (lib_id "Device:R") (at 325.12 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ca1b0bb-0e68-4c89-8b2f-8197a48d4eb1)
-    (property "Reference" "R18" (at 327.66 64.7699 0)
+    (property "Reference" "R70" (at 327.66 64.7699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 327.66 67.3099 0)
@@ -5384,17 +5243,12 @@
     (property "Datasheet" "~" (at 325.12 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6dde1918-89fb-4b70-9fc5-8a34fb4663c3))
-    (pin "2" (uuid 640cec46-4290-44f4-8fde-b31069e04613))
+    (pin "1" (uuid 3bd97967-786f-4e60-9c86-7e377526eec2))
+    (pin "2" (uuid 5b46d753-7b76-49ec-8683-13b1a3d62c90))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R18") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R30") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R70") (unit 1)
         )
       )
     )
@@ -5403,7 +5257,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 238.76 142.24 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d7137d3-8239-44e2-aebb-6a2817230d27)
-    (property "Reference" "Q24" (at 238.76 132.08 90)
+    (property "Reference" "Q16" (at 238.76 132.08 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SSM3J332R" (at 238.76 134.62 90)
@@ -5415,18 +5269,13 @@
     (property "Datasheet" "~" (at 238.76 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a6b43852-7f5f-44f4-bd48-0689ee2e6cc2))
-    (pin "2" (uuid ed625642-87f3-4f59-bbd5-2b5f6aebbf26))
-    (pin "3" (uuid 7e624f68-ea9f-4231-ae79-81da4225df4c))
+    (pin "1" (uuid c8493e65-e9dc-42ba-ba16-9d2ff1b7493b))
+    (pin "2" (uuid 47491514-f965-4a05-b263-6bd7f8d92b64))
+    (pin "3" (uuid 5e3f4415-6caf-43e9-90da-2f6f72cb3bb5))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q24") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q11") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q16") (unit 1)
         )
       )
     )
@@ -5435,7 +5284,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 124.46 205.74 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6d86695b-802f-4b68-9a24-806a97fcf427)
-    (property "Reference" "Q18" (at 124.46 198.12 90)
+    (property "Reference" "Q6" (at 124.46 198.12 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SSM3J332R" (at 124.46 195.58 90)
@@ -5447,18 +5296,13 @@
     (property "Datasheet" "~" (at 124.46 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0abb3664-a01b-431a-bc9f-a6eefa6bd275))
-    (pin "2" (uuid 91d67dc1-8f64-4723-9812-a15b64d951af))
-    (pin "3" (uuid d74a3633-468d-48fa-beef-a0e564ea2ae0))
+    (pin "1" (uuid ff06a393-b993-42a4-a52c-c77692ced335))
+    (pin "2" (uuid f28a1edc-debd-4026-822c-1b891f185bb1))
+    (pin "3" (uuid a88a001c-5e20-49ef-9112-f246ebc76283))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q18") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q1") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q6") (unit 1)
         )
       )
     )
@@ -5467,7 +5311,7 @@
   (symbol (lib_id "power:GND") (at 297.18 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 715ab57b-fa27-45c8-b044-2d3c31018adf)
-    (property "Reference" "#PWR0100" (at 297.18 130.81 0)
+    (property "Reference" "#PWR097" (at 297.18 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 297.18 128.27 0)
@@ -5479,11 +5323,11 @@
     (property "Datasheet" "" (at 297.18 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid aa3133b7-69f7-4fae-9049-422075468e46))
+    (pin "1" (uuid 4d509eea-eaf3-4356-9887-38f2caf108f0))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0100") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -5492,7 +5336,7 @@
   (symbol (lib_id "Device:R") (at 248.92 165.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 745ef0dc-991b-48dc-a375-78f2f7c921a3)
-    (property "Reference" "R100" (at 251.46 163.8299 0)
+    (property "Reference" "R65" (at 251.46 163.8299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 251.46 166.3699 0)
@@ -5504,17 +5348,12 @@
     (property "Datasheet" "~" (at 248.92 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 58e2c475-c231-4487-9a8f-01f62941a317))
-    (pin "2" (uuid cafbb0db-37d3-4715-b7d9-b2ed926adf85))
+    (pin "1" (uuid afc9ab94-8c65-4c72-b89a-68edd2b0c558))
+    (pin "2" (uuid 2415407d-8403-42c7-9296-815a6dbc850d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R100") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R25") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R65") (unit 1)
         )
       )
     )
@@ -5523,7 +5362,7 @@
   (symbol (lib_id "Device:R") (at 335.28 195.58 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 74f25c9a-f3e7-4361-b381-8f0783ce842c)
-    (property "Reference" "R19" (at 335.28 200.66 90)
+    (property "Reference" "R71" (at 335.28 200.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 335.28 198.12 90)
@@ -5535,17 +5374,12 @@
     (property "Datasheet" "~" (at 335.28 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ff356572-31bc-4ae2-87aa-af5061a8be24))
-    (pin "2" (uuid 20d57ffa-2e1d-4bcf-9ba4-ee131d7c9adc))
+    (pin "1" (uuid f3272214-2817-4e32-9a5f-6959c2a33ddd))
+    (pin "2" (uuid b7c624f1-3149-453e-b591-b582b9a6958c))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R19") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R31") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R71") (unit 1)
         )
       )
     )
@@ -5554,7 +5388,7 @@
   (symbol (lib_id "Device:R") (at 170.18 228.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76d0c07c-be9e-4c1a-ada7-4039f55b739a)
-    (property "Reference" "R95" (at 172.72 227.3299 0)
+    (property "Reference" "R53" (at 172.72 227.3299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 172.72 229.8699 0)
@@ -5566,17 +5400,12 @@
     (property "Datasheet" "~" (at 170.18 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bbaf69cf-9a47-4921-95d4-938f7cfcab64))
-    (pin "2" (uuid c8cdbd4e-f492-4a89-b7a0-42c06799b009))
+    (pin "1" (uuid 669fd679-829f-4663-9872-f962fe859b10))
+    (pin "2" (uuid 0e35ec4c-1269-4dca-b0c3-cca350c44833))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R95") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R13") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R53") (unit 1)
         )
       )
     )
@@ -5585,7 +5414,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 302.26 205.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 772382e5-6c4c-4478-aef2-9ed7671ef53b)
-    (property "Reference" "TP2" (at 302.26 213.36 0)
+    (property "Reference" "TP3" (at 302.26 213.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 302.26 210.82 0)
@@ -5597,15 +5426,10 @@
     (property "Datasheet" "~" (at 297.18 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96aee974-1b2d-455b-b2b0-a4427cdae971))
+    (pin "1" (uuid bb7130c4-6383-40b5-91e6-b49dea611a99))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "TP2") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "TP3") (unit 1)
         )
       )
@@ -5615,7 +5439,7 @@
   (symbol (lib_id "Device:R") (at 160.02 160.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 77de1d13-bac7-4c14-a49b-8a3e5ad31f53)
-    (property "Reference" "R6" (at 161.29 158.75 0)
+    (property "Reference" "R52" (at 161.29 158.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "2.2k" (at 161.29 161.29 0)
@@ -5627,17 +5451,12 @@
     (property "Datasheet" "~" (at 160.02 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 129b72ef-ac1e-4e68-bf6a-c211fc5e7415))
-    (pin "2" (uuid 55959bfd-f744-42f5-b711-f7c77ba36d8a))
+    (pin "1" (uuid 5bd1f4fd-a83b-4187-a65e-d5e0b7c1e8a0))
+    (pin "2" (uuid 270208b6-3309-4b32-8f61-9b8feb233651))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R6") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R12") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R52") (unit 1)
         )
       )
     )
@@ -5646,7 +5465,7 @@
   (symbol (lib_id "power:+BATT") (at 119.38 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7aef8687-450d-4d4a-98c7-f160e0016f74)
-    (property "Reference" "#PWR031" (at 119.38 74.93 0)
+    (property "Reference" "#PWR067" (at 119.38 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 123.19 68.58 0)
@@ -5658,16 +5477,36 @@
     (property "Datasheet" "" (at 119.38 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8d22ba2a-6da2-4048-bf21-07dc3044b6c6))
+    (pin "1" (uuid 8165644c-4147-4298-bb79-86bc2ab32a02))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR031") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR067") (unit 1)
         )
       )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR025") (unit 1)
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 144.78 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7c92604c-9feb-4f8d-b1ea-384cb23db5e1)
+    (property "Reference" "#PWR074" (at 144.78 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 144.78 86.36 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 144.78 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 144.78 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3a76d8d5-6718-4921-ac93-3904883d3cd5))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -5676,7 +5515,7 @@
   (symbol (lib_id "Device:R") (at 152.4 156.21 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81aaae36-6193-4b35-8a3f-d7186c7d4c55)
-    (property "Reference" "R4" (at 151.13 154.94 0)
+    (property "Reference" "R50" (at 151.13 154.94 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 151.13 157.48 0)
@@ -5688,17 +5527,12 @@
     (property "Datasheet" "~" (at 152.4 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e4b529e9-757a-4dd5-9694-f1fa488fd700))
-    (pin "2" (uuid 04df2668-1bad-424e-9f6d-89c144fd919f))
+    (pin "1" (uuid 4a2bb0cd-1c24-47a7-9a13-62fab6e62f19))
+    (pin "2" (uuid 46b211f9-cb5a-4c7d-b54f-02e7611dd72d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R4") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R10") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R50") (unit 1)
         )
       )
     )
@@ -5707,7 +5541,7 @@
   (symbol (lib_name "D_Schottky_3") (lib_id "Device:D_Schottky") (at 223.52 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 85c4597a-a103-4773-8d91-ac386d899667)
-    (property "Reference" "D2" (at 220.98 93.98 90)
+    (property "Reference" "D6" (at 220.98 93.98 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N5819WS" (at 220.98 96.52 90)
@@ -5719,17 +5553,12 @@
     (property "Datasheet" "~" (at 223.52 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e34ecfe2-544a-4d96-b5da-8be9df07b9d9))
-    (pin "2" (uuid 1cbe5ed7-177f-4b4b-8a5c-2407ff0d0621))
+    (pin "1" (uuid 83d0e03c-979f-487b-8100-f9e7516e3997))
+    (pin "2" (uuid eba1febb-46b9-4afa-9807-5752eb342f59))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D2") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D4") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -5738,7 +5567,7 @@
   (symbol (lib_id "Device:R") (at 83.82 228.6 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 85ff1a92-8632-477a-9da9-85d8793705a5)
-    (property "Reference" "R65" (at 86.36 231.14 90)
+    (property "Reference" "R43" (at 86.36 231.14 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 86.36 226.06 90)
@@ -5750,12 +5579,12 @@
     (property "Datasheet" "~" (at 83.82 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f35ecd6a-9401-40b1-8911-a5dd28d0dfaf))
-    (pin "2" (uuid 957507f2-d074-426a-9003-676edaf95e40))
+    (pin "1" (uuid f2b2533d-2a0c-4ecd-b9e0-721c7a461016))
+    (pin "2" (uuid ee54db40-dd17-4713-b201-0476531fb255))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R65") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -5764,7 +5593,7 @@
   (symbol (lib_id "power:GNDD") (at 81.28 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 860396cc-4a52-4106-b5f4-168f6419a28a)
-    (property "Reference" "#PWR0123" (at 81.28 214.63 0)
+    (property "Reference" "#PWR057" (at 81.28 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 86.36 210.82 0)
@@ -5776,11 +5605,11 @@
     (property "Datasheet" "" (at 81.28 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8ab76b66-fe2d-4e1c-ab3a-298a8bb72dbf))
+    (pin "1" (uuid 7f92a985-0fd4-4b5c-b534-de7b84229156))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0123") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -5789,7 +5618,7 @@
   (symbol (lib_id "power:GNDD") (at 104.14 172.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8677cf94-35bc-475b-a88d-00fa80008483)
-    (property "Reference" "#PWR02" (at 104.14 179.07 0)
+    (property "Reference" "#PWR060" (at 104.14 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 104.14 176.53 0)
@@ -5801,16 +5630,11 @@
     (property "Datasheet" "" (at 104.14 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 25701401-3146-4620-bdfc-cf86541b87a1))
+    (pin "1" (uuid 589ef2a5-f37c-42d1-9da0-415e65d8a293))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR018") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -5819,7 +5643,7 @@
   (symbol (lib_id "power:GND") (at 231.14 43.18 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89bf3912-b51f-4a8e-93e6-4d591a3d8f79)
-    (property "Reference" "#PWR03" (at 231.14 49.53 0)
+    (property "Reference" "#PWR089" (at 231.14 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.013 47.5742 0)
@@ -5831,16 +5655,11 @@
     (property "Datasheet" "" (at 231.14 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c5e156f9-7cae-47f7-bbc2-7342a5ef9a8e))
+    (pin "1" (uuid 72cf8fd2-3fc2-4433-9862-fb947731be01))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR045") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR089") (unit 1)
         )
       )
     )
@@ -5849,7 +5668,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 109.22 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a18a879-b664-4233-95c2-42d6e82039b2)
-    (property "Reference" "J10" (at 109.855 76.2 0)
+    (property "Reference" "J8" (at 109.855 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Male" (at 109.855 78.74 0)
@@ -5861,17 +5680,12 @@
     (property "Datasheet" "~" (at 109.22 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 110a7b49-8245-4eee-8dbb-68f423674c25))
-    (pin "2" (uuid b3e25a78-d750-4628-9605-9618f57b2804))
+    (pin "1" (uuid 78dce169-2b11-43bc-a5d0-07f5ad45df98))
+    (pin "2" (uuid 3e397b7f-d3f8-4382-a7e8-5392cd19cc8a))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "J10") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "J3") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -5880,7 +5694,7 @@
   (symbol (lib_id "Device:R") (at 160.02 144.78 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ce92688-f23c-483f-ae59-10ca0ee5c8c9)
-    (property "Reference" "R5" (at 161.29 143.51 0)
+    (property "Reference" "R51" (at 161.29 143.51 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "12k" (at 161.29 146.05 0)
@@ -5892,17 +5706,12 @@
     (property "Datasheet" "~" (at 160.02 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d8807d95-f3ec-476b-8244-4f2b91984477))
-    (pin "2" (uuid bcdc7a9f-20c8-465f-a46b-43ca9bf73b39))
+    (pin "1" (uuid ccc36ed0-eda5-4d5e-b8e1-2f996954402e))
+    (pin "2" (uuid cd8c0a9a-bfb4-42ab-ac41-9b1fdcd224f7))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R5") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R11") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R51") (unit 1)
         )
       )
     )
@@ -5911,7 +5720,7 @@
   (symbol (lib_id "power:VDD") (at 302.26 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e871417-4144-446a-a7c0-378e37637b75)
-    (property "Reference" "#PWR017" (at 302.26 62.23 0)
+    (property "Reference" "#PWR0100" (at 302.26 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 302.26 54.61 0)
@@ -5923,16 +5732,11 @@
     (property "Datasheet" "" (at 302.26 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3c32b366-8a87-424d-a92e-0e676933bee8))
+    (pin "1" (uuid 5acd1883-6ffc-422f-b771-86c5818bc83d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR017") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR054") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -5941,7 +5745,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 109.22 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 918478da-3ad5-434a-aedf-99989f6d7a47)
-    (property "Reference" "J12" (at 109.855 101.6 0)
+    (property "Reference" "J10" (at 109.855 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Male" (at 109.855 104.14 0)
@@ -5953,17 +5757,12 @@
     (property "Datasheet" "~" (at 109.22 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f0400867-6e7a-44f6-9662-1c1b7c84d4e5))
-    (pin "2" (uuid 3db33b9e-76e0-4790-a0b7-5b5c88729da9))
+    (pin "1" (uuid 59768104-5791-49df-a027-2e5cb72db8e0))
+    (pin "2" (uuid ec9db109-6467-4410-b6a2-15dd364ea710))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "J12") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "J5") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -5972,7 +5771,7 @@
   (symbol (lib_id "power:GNDD") (at 322.58 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 966727bf-618a-4b70-993e-f002a61faeec)
-    (property "Reference" "#PWR023" (at 322.58 153.67 0)
+    (property "Reference" "#PWR0110" (at 322.58 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 322.58 151.13 0)
@@ -5984,16 +5783,11 @@
     (property "Datasheet" "" (at 322.58 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e8ee0e7d-b3f1-4800-9cc5-5d2d714b39b6))
+    (pin "1" (uuid acad4286-3e50-41d0-a15b-ab208b59dc06))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR023") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR060") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -6002,7 +5796,7 @@
   (symbol (lib_id "power:+BATT") (at 297.18 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96e650da-2bf7-47b2-8468-68c8b56dac62)
-    (property "Reference" "#PWR0104" (at 297.18 118.11 0)
+    (property "Reference" "#PWR096" (at 297.18 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 300.99 111.76 0)
@@ -6014,11 +5808,11 @@
     (property "Datasheet" "" (at 297.18 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9d9d12e6-137a-4e75-8e33-8cd4a02e5378))
+    (pin "1" (uuid 943fc8e7-2eb2-4563-8651-499497deeded))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0104") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -6027,7 +5821,7 @@
   (symbol (lib_id "Device:C") (at 109.22 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96ea7ea0-e835-445d-a0fc-8dcfddf26912)
-    (property "Reference" "C1" (at 111.76 153.67 0)
+    (property "Reference" "C20" (at 111.76 153.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 111.76 156.21 0)
@@ -6039,17 +5833,12 @@
     (property "Datasheet" "~" (at 109.22 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d4ab01d5-0ebc-498f-9739-2507dd664f1e))
-    (pin "2" (uuid c2073ccc-91c8-4701-b3ab-1018b0e29731))
+    (pin "1" (uuid d6a8d440-78f5-4e86-9b11-c5e2bd14b881))
+    (pin "2" (uuid 8e00631f-f683-4244-bbc7-d7151f0677c4))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C16") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -6058,7 +5847,7 @@
   (symbol (lib_id "power:GND") (at 309.88 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 97bd73a0-a2a5-4cce-8c38-0e8cdc7d769d)
-    (property "Reference" "#PWR0101" (at 309.88 130.81 0)
+    (property "Reference" "#PWR0104" (at 309.88 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 309.88 128.27 0)
@@ -6070,11 +5859,11 @@
     (property "Datasheet" "" (at 309.88 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c504baf8-40d6-4bce-a4e4-0fd8de44c96d))
+    (pin "1" (uuid 11d3f66c-75af-4273-a0d8-08ca6d9ad869))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0101") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -6083,7 +5872,7 @@
   (symbol (lib_id "power:VCC") (at 256.54 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 990acecd-60a7-4689-9082-f112eda95c5b)
-    (property "Reference" "#PWR011" (at 256.54 72.39 0)
+    (property "Reference" "#PWR091" (at 256.54 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 256.54 64.77 0)
@@ -6095,16 +5884,11 @@
     (property "Datasheet" "" (at 256.54 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c1ed14ca-e54c-44a3-96eb-643c30c521f6))
+    (pin "1" (uuid 897fbc65-685c-4f65-b5d7-d19a20c55b5c))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR011") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR047") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -6113,7 +5897,7 @@
   (symbol (lib_id "Device:R") (at 177.8 218.44 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 992cae88-e3c7-4120-a818-f5481ad45c6c)
-    (property "Reference" "R96" (at 180.34 217.1699 0)
+    (property "Reference" "R55" (at 180.34 217.1699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 180.34 219.7099 0)
@@ -6125,17 +5909,12 @@
     (property "Datasheet" "~" (at 177.8 218.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6bb7b2d2-2cf9-4e2a-8da6-082bc122d5aa))
-    (pin "2" (uuid 2b8625d0-df25-4a8c-a09d-c248f4b69ef7))
+    (pin "1" (uuid 759da426-1a32-4b48-b87d-68bf228f4bc4))
+    (pin "2" (uuid fd9a0490-55f8-44f0-9001-38a0dea079b9))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R96") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R15") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R55") (unit 1)
         )
       )
     )
@@ -6144,7 +5923,7 @@
   (symbol (lib_id "Device:R") (at 175.26 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 99794943-49b7-4366-b681-76a5e4b475b5)
-    (property "Reference" "R8" (at 176.53 143.51 0)
+    (property "Reference" "R54" (at 176.53 143.51 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 176.53 146.05 0)
@@ -6156,17 +5935,12 @@
     (property "Datasheet" "~" (at 175.26 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a30acbd2-cfa7-4478-bb34-55e0f1ef23a3))
-    (pin "2" (uuid c916cb4c-edcf-430a-85c4-88c7d236a354))
+    (pin "1" (uuid 05190c3e-245d-4e09-a2c6-b9a3f274dd79))
+    (pin "2" (uuid 35a9d5cb-2d44-47c2-8350-0f01cab7b741))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R14") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R54") (unit 1)
         )
       )
     )
@@ -6175,7 +5949,7 @@
   (symbol (lib_id "Device:R") (at 231.14 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9b030e5c-6fcf-45b5-872d-79e5cbc78a10)
-    (property "Reference" "R13" (at 232.41 87.63 0)
+    (property "Reference" "R64" (at 232.41 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 232.41 90.17 0)
@@ -6187,17 +5961,12 @@
     (property "Datasheet" "~" (at 231.14 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a1d25b5c-a91f-40e2-bf4e-e5700c6d1a36))
-    (pin "2" (uuid ce1373c4-c366-4171-bc76-fc0537463711))
+    (pin "1" (uuid 10068ad4-27f4-43e0-8ed1-e8190c019ed1))
+    (pin "2" (uuid 597f7fe3-2321-4459-8a5c-2762d8f07722))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R13") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R24") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R64") (unit 1)
         )
       )
     )
@@ -6206,7 +5975,7 @@
   (symbol (lib_id "Device:R") (at 124.46 228.6 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d60bc34-05c2-47a7-9cdf-b0c2399bfa1f)
-    (property "Reference" "R92" (at 127 228.6 0)
+    (property "Reference" "R47" (at 127 228.6 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 127 231.14 0)
@@ -6218,17 +5987,12 @@
     (property "Datasheet" "~" (at 124.46 228.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0aeedb30-40d1-46f7-83dd-4fe6a0470b7a))
-    (pin "2" (uuid f899de7e-df6a-4985-b0b5-ba64a5527aef))
+    (pin "1" (uuid 97796f03-da24-4e00-a8a2-ac23c35cb3ec))
+    (pin "2" (uuid 23df69f1-345e-40af-9a0f-b19b7a1018b5))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R92") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R7") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R47") (unit 1)
         )
       )
     )
@@ -6237,7 +6001,7 @@
   (symbol (lib_name "D_Schottky_3") (lib_id "Device:D_Schottky") (at 236.22 203.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9f2f07eb-ec23-4903-9449-9a2c94a714e4)
-    (property "Reference" "D4" (at 235.9025 196.85 0)
+    (property "Reference" "D8" (at 235.9025 196.85 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N5819WS" (at 235.9025 199.39 0)
@@ -6249,17 +6013,38 @@
     (property "Datasheet" "~" (at 236.22 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ec67cabe-377d-459e-b177-fb350f1eec90))
-    (pin "2" (uuid 71c9a796-b63e-436e-b11e-3203824ed493))
+    (pin "1" (uuid 4e99dce5-bdd0-47a8-9f07-0e6c6c61cc0f))
+    (pin "2" (uuid e1925a8b-060d-494b-b58c-4280e79c1056))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D4") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D8") (unit 1)
         )
       )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D6") (unit 1)
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x02_Male") (at 137.16 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9fa01877-e3f6-4dc1-b316-1d1f42e93310)
+    (property "Reference" "J12" (at 137.795 76.2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x02_Male" (at 137.795 78.74 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_Molex:Molex_SPOX_5267-02A_1x02_P2.50mm_Vertical" (at 137.16 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 137.16 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2cbaf8f6-0716-4be4-badf-92441e08c2a1))
+    (pin "2" (uuid 44a9c003-3016-412d-a73f-8f990711d296))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -6268,7 +6053,7 @@
   (symbol (lib_id "power:+BATT") (at 309.88 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1b1d302-9cc9-4f46-940a-1a338c04f497)
-    (property "Reference" "#PWR0117" (at 309.88 118.11 0)
+    (property "Reference" "#PWR0103" (at 309.88 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 313.69 111.76 0)
@@ -6280,11 +6065,11 @@
     (property "Datasheet" "" (at 309.88 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c8688b5c-e8c2-4c6e-a7b3-b5109985bdd5))
+    (pin "1" (uuid ffae7a4d-4897-4768-9183-f021bc2433a1))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0117") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -6293,7 +6078,7 @@
   (symbol (lib_id "Device:D_Zener") (at 185.42 218.44 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a23d91c9-f7d1-4cf1-92c6-eca309c9d3d9)
-    (property "Reference" "D8" (at 187.96 217.1699 90)
+    (property "Reference" "D5" (at 187.96 217.1699 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "D_Zener" (at 187.96 219.7099 90)
@@ -6305,17 +6090,12 @@
     (property "Datasheet" "~" (at 185.42 218.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid daf5a951-7308-4940-901c-95a0b8102380))
-    (pin "2" (uuid 396c79b7-a130-4020-b9a2-bb4746fd79b5))
+    (pin "1" (uuid 9a38a639-a075-4e47-a833-d8581948c7f7))
+    (pin "2" (uuid baea7eb2-58b7-4e30-9119-02bdac4072a0))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D8") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D3") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -6324,7 +6104,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 109.22 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a4e229e4-5065-4bf2-beaa-97348347ea97)
-    (property "Reference" "J9" (at 109.855 63.5 0)
+    (property "Reference" "J7" (at 109.855 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Male" (at 109.855 66.04 0)
@@ -6336,17 +6116,12 @@
     (property "Datasheet" "~" (at 109.22 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b8e6c2ce-9ac0-432d-9ca0-f239979b6fd1))
-    (pin "2" (uuid 760f6ba5-3a44-4596-98e7-d684105c3ada))
+    (pin "1" (uuid 1a525243-4b60-4966-bf7f-c02780911ed4))
+    (pin "2" (uuid 0926721d-db6a-4071-aa70-d750e61f2ccb))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "J9") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "J2") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -6355,7 +6130,7 @@
   (symbol (lib_id "power:+3.3V") (at 335.28 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5ecaf3a-64b0-42eb-98ca-d86b8e4284a1)
-    (property "Reference" "#PWR026" (at 335.28 140.97 0)
+    (property "Reference" "#PWR0115" (at 335.28 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 335.28 133.35 0)
@@ -6367,16 +6142,11 @@
     (property "Datasheet" "" (at 335.28 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 884e1933-9e57-4023-a569-4cd57cc51d5c))
+    (pin "1" (uuid 14c2e71e-7cca-4bd6-bbd4-5fc1f84c077f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR063") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -6385,7 +6155,7 @@
   (symbol (lib_id "Device:R") (at 114.3 218.44 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a6c5e9c2-4936-4607-8bff-6247d65989ef)
-    (property "Reference" "R76" (at 111.76 217.1699 0)
+    (property "Reference" "R44" (at 111.76 217.1699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 111.76 219.7099 0)
@@ -6397,17 +6167,12 @@
     (property "Datasheet" "~" (at 114.3 218.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f327a835-0b37-4d45-b36f-89e2a9b03b71))
-    (pin "2" (uuid 45ce4d0c-c772-4be6-95d3-98f72de1cd49))
+    (pin "1" (uuid 6947cd86-c038-4d27-919b-90abbd4298a4))
+    (pin "2" (uuid 1edd06dc-2014-4a0e-bbca-919c6e5e3084))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R76") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R4") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -6416,7 +6181,7 @@
   (symbol (lib_id "power:GNDD") (at 353.06 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a775cf00-b10e-42a2-8fca-e7365fc4c144)
-    (property "Reference" "#PWR028" (at 353.06 214.63 0)
+    (property "Reference" "#PWR0120" (at 353.06 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 353.06 212.09 0)
@@ -6428,16 +6193,11 @@
     (property "Datasheet" "" (at 353.06 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9b9c2129-8e73-4a39-8559-98b22804e8f8))
+    (pin "1" (uuid 3f7934ac-e70b-4ca2-aa6e-98417fa1fa74))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR028") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR066") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0120") (unit 1)
         )
       )
     )
@@ -6446,7 +6206,7 @@
   (symbol (lib_id "Device:Q_PNP_BEC") (at 167.64 215.9 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a77c643e-8f51-472f-8935-cc5b5b96b1b6)
-    (property "Reference" "Q21" (at 165.1 208.28 0)
+    (property "Reference" "Q9" (at 165.1 208.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "S8550" (at 165.1 210.82 0)
@@ -6458,18 +6218,13 @@
     (property "Datasheet" "~" (at 167.64 215.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96fb63ab-6d95-4fac-879d-78de7d7559aa))
-    (pin "2" (uuid 85f3baa8-e320-4d25-8d15-f89256c1a5e6))
-    (pin "3" (uuid d1fda56f-a3b3-4d38-a6ff-50e48df80e43))
+    (pin "1" (uuid e4fbee59-107e-4556-a9b7-e77c6a7f62b9))
+    (pin "2" (uuid 1c8e76af-6ba1-4972-9e2e-35bacebd94ab))
+    (pin "3" (uuid cba641ef-9a56-4bb7-a454-e8c8f6e02b6d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q21") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q4") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q9") (unit 1)
         )
       )
     )
@@ -6478,7 +6233,7 @@
   (symbol (lib_id "Device:R") (at 190.5 154.94 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a805a205-acdd-43fc-8488-064656fdf9eb)
-    (property "Reference" "R10" (at 193.04 153.6699 0)
+    (property "Reference" "R57" (at 193.04 153.6699 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 193.04 156.2099 0)
@@ -6490,17 +6245,12 @@
     (property "Datasheet" "~" (at 190.5 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ca999f96-bcbf-4ab0-8096-6881b98510d5))
-    (pin "2" (uuid 13ac9737-419b-4f9f-ace9-25e066138719))
+    (pin "1" (uuid b32f0b8a-44a3-4ea2-b2a1-6ec71227fb4c))
+    (pin "2" (uuid cac707ce-df9f-4419-b889-7f32a2123139))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R10") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R17") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R57") (unit 1)
         )
       )
     )
@@ -6509,7 +6259,7 @@
   (symbol (lib_id "Device:C") (at 226.06 220.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a869094c-1d7b-449d-b25f-fe252f577d23)
-    (property "Reference" "C4" (at 229.87 219.7099 0)
+    (property "Reference" "C24" (at 229.87 219.7099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 229.87 222.2499 0)
@@ -6521,17 +6271,12 @@
     (property "Datasheet" "~" (at 226.06 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bfbc33c8-31c2-4aa1-bb2d-96146a3e5387))
-    (pin "2" (uuid 1f9c65bb-f601-4756-9966-70a249fbe068))
+    (pin "1" (uuid ecba6969-0e41-414e-a1c0-60eb0422c0ee))
+    (pin "2" (uuid 199ed56c-3f54-46aa-90aa-29cbdf2426e2))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C4") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C20") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -6540,7 +6285,7 @@
   (symbol (lib_id "power:GNDD") (at 307.34 205.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a9f58204-e1ee-4118-ac23-c1d0b856ec75)
-    (property "Reference" "#PWR019" (at 307.34 212.09 0)
+    (property "Reference" "#PWR0102" (at 307.34 212.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 307.34 209.55 0)
@@ -6552,16 +6297,11 @@
     (property "Datasheet" "" (at 307.34 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8cc9500b-b05a-467b-ab39-cb4b763fa5be))
+    (pin "1" (uuid 603e2be2-c804-46ed-a8f3-7a19002dc5b1))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR056") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -6570,7 +6310,7 @@
   (symbol (lib_id "power:+5V") (at 254 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ac157804-5050-4102-acf2-02c4cd9beb4d)
-    (property "Reference" "#PWR0121" (at 254 140.97 0)
+    (property "Reference" "#PWR090" (at 254 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 254 133.35 0)
@@ -6582,16 +6322,11 @@
     (property "Datasheet" "" (at 254 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2f4d4ad6-f1e5-4a72-b8f0-d0210188978d))
+    (pin "1" (uuid f5a4ec33-6c0b-457f-9b4f-56890fb2fa78))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0121") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR046") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -6600,7 +6335,7 @@
   (symbol (lib_id "power:+BATT") (at 119.38 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ad3dc94f-e4e6-4749-b994-e812be89e299)
-    (property "Reference" "#PWR032" (at 119.38 87.63 0)
+    (property "Reference" "#PWR068" (at 119.38 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 123.19 81.28 0)
@@ -6612,16 +6347,11 @@
     (property "Datasheet" "" (at 119.38 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dad3e8c1-5534-4b53-9f72-124a9263fdb4))
+    (pin "1" (uuid b33223b8-7a78-4bcb-b327-72a0cd423f40))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR032") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR026") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -6630,7 +6360,7 @@
   (symbol (lib_id "power:VBUS") (at 81.28 195.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b259a9a6-b8e0-4d86-bc4c-e252cd40f04d)
-    (property "Reference" "#PWR0124" (at 81.28 199.39 0)
+    (property "Reference" "#PWR056" (at 81.28 199.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 81.28 191.77 0)
@@ -6642,11 +6372,11 @@
     (property "Datasheet" "" (at 81.28 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9f95e1e1-7b07-477f-bd88-accf96be58cc))
+    (pin "1" (uuid be205b60-d043-4c8b-94ca-df323c2e6d56))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0124") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -6655,7 +6385,7 @@
   (symbol (lib_name "PMN48XP_1") (lib_id "Transistor_FET:PMN48XP") (at 215.9 73.66 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b32a19f7-b566-499a-a92c-12509646cba2)
-    (property "Reference" "Q16" (at 215.9 63.5 90)
+    (property "Reference" "Q14" (at 215.9 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SSM6J808R" (at 215.9 66.04 90)
@@ -6667,21 +6397,16 @@
     (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMN48XP.pdf" (at 215.9 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0104627c-686a-4d4d-833f-9218093c4ef9))
-    (pin "2" (uuid 969d765d-c087-4ede-81a6-3f6b60ec3a67))
-    (pin "3" (uuid ee6bbf01-4feb-47c8-89d3-6fd0925b65bf))
-    (pin "4" (uuid 15481a76-af7a-409d-86dd-104e89aa63b1))
-    (pin "5" (uuid b9429435-ba91-426b-85ee-4e40815ac1d9))
-    (pin "6" (uuid 168fe340-33ae-4003-a8e7-ac04567c7df9))
+    (pin "1" (uuid 83f95bf2-ef0e-416f-9fa6-d8f8a9668b0f))
+    (pin "2" (uuid e0d36c38-b6af-41c5-99f4-91ef99b74a41))
+    (pin "3" (uuid ebfbf19c-7290-402a-a77b-e65dc98fc55f))
+    (pin "4" (uuid 1f11d9a9-2e6f-4cdf-a023-bf82fd231dbd))
+    (pin "5" (uuid 33960575-c600-4073-8e8a-c5429efe20a1))
+    (pin "6" (uuid 1cc17028-5aef-42d3-9a42-e35d9cd5cd3a))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q16") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q9") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q14") (unit 1)
         )
       )
     )
@@ -6690,7 +6415,7 @@
   (symbol (lib_id "Device:C") (at 246.38 220.98 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b62b8889-1694-4dcf-a7cf-5013c2e638df)
-    (property "Reference" "C5" (at 242.57 219.7099 0)
+    (property "Reference" "C25" (at 242.57 219.7099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 242.57 222.2499 0)
@@ -6702,17 +6427,12 @@
     (property "Datasheet" "~" (at 246.38 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 53dc33fe-f12f-439e-a5ee-9f9dbd62ba31))
-    (pin "2" (uuid b372f5c8-f6f3-4376-a130-54d17404150d))
+    (pin "1" (uuid bd1e9a44-b546-43a1-a723-b54261f75ff0))
+    (pin "2" (uuid d0cf8dc5-7381-427d-ade2-d81bb47a854a))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C5") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C21") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -6721,7 +6441,7 @@
   (symbol (lib_id "power:GND") (at 116.84 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1a7b16e-0afe-4d86-9613-bb58b100989c)
-    (property "Reference" "#PWR0113" (at 116.84 100.33 0)
+    (property "Reference" "#PWR065" (at 116.84 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 99.06 0)
@@ -6733,16 +6453,11 @@
     (property "Datasheet" "" (at 116.84 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f8575812-2512-4303-87ea-e4f82e1d80f0))
+    (pin "1" (uuid 5906705a-9370-4b8e-b2e7-0cbb9deef497))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0113") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR023") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -6751,7 +6466,7 @@
   (symbol (lib_id "power:+BATT") (at 322.58 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c21d06a5-ae51-4b78-9e49-510ac60cae98)
-    (property "Reference" "#PWR0118" (at 322.58 118.11 0)
+    (property "Reference" "#PWR0107" (at 322.58 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 326.39 111.76 0)
@@ -6763,11 +6478,11 @@
     (property "Datasheet" "" (at 322.58 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3059a35f-b2a4-419c-a140-9af9287bf66b))
+    (pin "1" (uuid a909f54b-7e2e-4e48-bbe0-ea333bc9d0a3))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0118") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -6776,7 +6491,7 @@
   (symbol (lib_id "power:VCC") (at 104.14 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2dc37c0-7ca7-45c2-b340-6870b7d68734)
-    (property "Reference" "#PWR01" (at 104.14 140.97 0)
+    (property "Reference" "#PWR059" (at 104.14 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 104.14 133.35 0)
@@ -6788,16 +6503,11 @@
     (property "Datasheet" "" (at 104.14 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 197f4a5f-f0e8-4965-a592-fea7fd1272e0))
+    (pin "1" (uuid 4389848b-ba5b-41f4-9129-b1248eaa7384))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR017") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -6806,7 +6516,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 160.02 205.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c69d7e16-b9f4-4345-9cda-7ca6d945348d)
-    (property "Reference" "Q20" (at 160.02 195.58 90)
+    (property "Reference" "Q8" (at 160.02 195.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SSM3J332R" (at 160.02 198.12 90)
@@ -6818,18 +6528,13 @@
     (property "Datasheet" "~" (at 160.02 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid febdc7f1-2712-4905-87aa-3d9b1b123a40))
-    (pin "2" (uuid 61b73368-ee39-4547-82de-e0b99c80a619))
-    (pin "3" (uuid d415cd22-b881-4021-9455-888b119b7857))
+    (pin "1" (uuid 56ef14e8-d485-4669-96fc-ff3b257062d2))
+    (pin "2" (uuid 530a0c1b-1043-46f4-bea5-014aa5f29526))
+    (pin "3" (uuid 4ec5f93c-0727-4466-b353-29660f751e3d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q20") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q3") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q8") (unit 1)
         )
       )
     )
@@ -6838,7 +6543,7 @@
   (symbol (lib_id "power:GNDD") (at 83.82 238.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6d362a7-037c-4f22-ab47-1a31d1d43825)
-    (property "Reference" "#PWR0122" (at 83.82 245.11 0)
+    (property "Reference" "#PWR058" (at 83.82 245.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 83.82 242.57 0)
@@ -6850,11 +6555,37 @@
     (property "Datasheet" "" (at 83.82 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a8e4e1cc-9a00-4464-9a71-2faa531789f3))
+    (pin "1" (uuid 888e7afe-20bb-449e-91e7-8c073a158a3b))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0122") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR058") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x02_Male") (at 137.16 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c767d2b0-706f-4f01-9cf1-1c1e8efe7931)
+    (property "Reference" "J14" (at 137.795 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x02_Male" (at 137.795 104.14 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_Molex:Molex_SPOX_5267-02A_1x02_P2.50mm_Vertical" (at 137.16 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 137.16 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid db12130f-f332-41b9-8d73-0b26755d5cdd))
+    (pin "2" (uuid 37d18ccc-ab47-488d-aa7e-452112237da9))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J14") (unit 1)
         )
       )
     )
@@ -6863,7 +6594,7 @@
   (symbol (lib_id "power:VCC") (at 309.88 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c84c7ad4-73d7-4c6c-b62c-5594006a050e)
-    (property "Reference" "#PWR020" (at 309.88 140.97 0)
+    (property "Reference" "#PWR0105" (at 309.88 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 309.88 133.35 0)
@@ -6875,16 +6606,11 @@
     (property "Datasheet" "" (at 309.88 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 47213506-1076-475b-9f1f-af95c9f258e4))
+    (pin "1" (uuid 9f5b9c08-cf09-4adb-ad2a-8166a330c550))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR020") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR057") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -6893,7 +6619,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 182.88 142.24 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c8ab112a-20ec-4c24-a6eb-013072d5c36f)
-    (property "Reference" "Q3" (at 182.88 132.08 90)
+    (property "Reference" "Q11" (at 182.88 132.08 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SSM3J332R" (at 182.88 134.62 90)
@@ -6905,18 +6631,13 @@
     (property "Datasheet" "~" (at 182.88 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e29f06b2-7a40-44d5-8ee8-c4ae7c1b5e8a))
-    (pin "2" (uuid b92ad911-2982-4fc8-9aa6-f1a8db64b778))
-    (pin "3" (uuid fdf19913-3ca0-42ed-a6d2-d79d483f825e))
+    (pin "1" (uuid 5218fccf-27b1-4873-a5b1-c1630c5b4ebb))
+    (pin "2" (uuid f9dad4f1-a461-4011-a2e1-690fab46da3e))
+    (pin "3" (uuid 2374ea57-32f5-43ee-ba47-194c2eeb8d26))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q3") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q6") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q11") (unit 1)
         )
       )
     )
@@ -6925,7 +6646,7 @@
   (symbol (lib_id "power:GNDPWR") (at 228.6 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c94a211d-efec-4849-a853-555de3be9567)
-    (property "Reference" "#PWR010" (at 228.6 114.3 0)
+    (property "Reference" "#PWR088" (at 228.6 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDPWR" (at 228.473 113.03 0)
@@ -6937,16 +6658,36 @@
     (property "Datasheet" "" (at 228.6 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 657f78a7-736b-400b-89ec-f1592c91c48a))
+    (pin "1" (uuid 0478986b-ee4d-4798-84f9-7082e1317869))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR010") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR088") (unit 1)
         )
       )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR044") (unit 1)
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 144.78 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid cb0cad83-deea-4e95-9369-0a0018137514)
+    (property "Reference" "#PWR076" (at 144.78 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 144.78 111.76 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 144.78 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 144.78 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7b22fec4-112e-4d53-bd51-1f5cc544b775))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -6955,7 +6696,7 @@
   (symbol (lib_id "Device:LED") (at 345.44 220.98 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd3e7d51-295b-4dd4-9c91-58f22a5b52cc)
-    (property "Reference" "D6" (at 345.44 226.06 0)
+    (property "Reference" "D11" (at 345.44 226.06 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Green" (at 345.44 223.52 0)
@@ -6967,17 +6708,12 @@
     (property "Datasheet" "~" (at 345.44 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 751759b7-a602-48be-b78c-dc7779759605))
-    (pin "2" (uuid cfef434d-800a-4855-b100-352285bae33e))
+    (pin "1" (uuid faba0be9-53a2-473d-a703-5656b3b5d5c2))
+    (pin "2" (uuid cd09f795-5249-4220-9063-8d5b3974407d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D6") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D9") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D11") (unit 1)
         )
       )
     )
@@ -6986,7 +6722,7 @@
   (symbol (lib_id "Device:R") (at 208.28 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cdc783be-33c2-41f2-afeb-babd1ca32c6f)
-    (property "Reference" "R11" (at 209.55 74.93 0)
+    (property "Reference" "R59" (at 209.55 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 209.55 77.47 0)
@@ -6998,17 +6734,12 @@
     (property "Datasheet" "~" (at 208.28 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2d943bad-a820-469a-b1e5-0f2d58201825))
-    (pin "2" (uuid a385e2c5-36c4-456d-a901-2b161a16deda))
+    (pin "1" (uuid 1af0e916-a2b4-4ebd-b900-36f0fff96539))
+    (pin "2" (uuid ed313c27-47f1-498f-8fa7-1982e5de50d1))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R11") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R19") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R59") (unit 1)
         )
       )
     )
@@ -7017,7 +6748,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 137.16 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cfa56f68-3c0c-4a41-85c2-693b06a758cb)
-    (property "Reference" "J13" (at 137.795 63.5 0)
+    (property "Reference" "J11" (at 137.795 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Male" (at 137.795 66.04 0)
@@ -7029,17 +6760,12 @@
     (property "Datasheet" "~" (at 137.16 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cb0675f6-d86d-43be-b815-00c1789841dd))
-    (pin "2" (uuid b2d8c4e7-6b65-456e-87c6-736c8c151c40))
+    (pin "1" (uuid 75a4d915-54be-4d64-b66a-7ecd346e7ff0))
+    (pin "2" (uuid c3b80cae-b0df-484f-b594-c108a89acf6e))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "J13") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "J7") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -7048,7 +6774,7 @@
   (symbol (lib_id "power:GNDD") (at 309.88 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d0edb7f3-174e-4a42-9912-e0720d1ad858)
-    (property "Reference" "#PWR021" (at 309.88 153.67 0)
+    (property "Reference" "#PWR0106" (at 309.88 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 309.88 151.13 0)
@@ -7060,16 +6786,11 @@
     (property "Datasheet" "" (at 309.88 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 544f5989-3c20-4056-847b-565bdb7112d6))
+    (pin "1" (uuid e278c483-2d58-460a-9932-fb80caaedf8c))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR021") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR058") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -7078,7 +6799,7 @@
   (symbol (lib_id "Device:LED") (at 345.44 208.28 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d17e3969-d7b0-4bf5-a215-0999cb2307cb)
-    (property "Reference" "D5" (at 345.44 213.36 0)
+    (property "Reference" "D10" (at 345.44 213.36 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Green" (at 345.44 210.82 0)
@@ -7090,17 +6811,12 @@
     (property "Datasheet" "~" (at 345.44 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6a707b0b-4837-4053-a60c-5461bc9abecb))
-    (pin "2" (uuid 56d9ce23-cbf4-4914-b599-c5d6b8f0011d))
+    (pin "1" (uuid 9c7c3cff-c06e-4dad-88a9-018fc899f3c8))
+    (pin "2" (uuid 03a060d9-da9b-40f0-ac60-699d0197eeac))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D5") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D8") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D10") (unit 1)
         )
       )
     )
@@ -7109,7 +6825,7 @@
   (symbol (lib_id "power:+BATT") (at 119.38 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d35fb55a-c5d5-4c8b-b552-dfa40a239548)
-    (property "Reference" "#PWR033" (at 119.38 100.33 0)
+    (property "Reference" "#PWR069" (at 119.38 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 123.19 93.98 0)
@@ -7121,16 +6837,11 @@
     (property "Datasheet" "" (at 119.38 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5ba9ba7f-bb57-4925-8d79-14b09094aae1))
+    (pin "1" (uuid a8db6182-c25e-407f-addb-7093731f0239))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR033") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR027") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -7139,7 +6850,7 @@
   (symbol (lib_id "Device:Q_PNP_BEC") (at 231.14 152.4 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d3668ae7-4b11-4cd2-8797-e144752b9924)
-    (property "Reference" "Q23" (at 233.68 144.78 0)
+    (property "Reference" "Q15" (at 233.68 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "S8550" (at 233.68 147.32 0)
@@ -7151,18 +6862,13 @@
     (property "Datasheet" "~" (at 231.14 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid eec7ed14-b718-456d-8423-822118daad35))
-    (pin "2" (uuid dd2d75c6-fa89-499d-b6cb-8aee54405e33))
-    (pin "3" (uuid 729f82ca-f84e-4604-b2f4-097c18078817))
+    (pin "1" (uuid 1657770f-51b6-42f8-abfb-58a633fea9d7))
+    (pin "2" (uuid bffdad16-6863-4166-b3d8-1387ba7fde16))
+    (pin "3" (uuid ade9d3fc-f7ba-496e-b89e-ce01f2a9d210))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q23") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q10") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q15") (unit 1)
         )
       )
     )
@@ -7171,7 +6877,7 @@
   (symbol (lib_id "Device:R") (at 251.46 88.9 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d399178e-87a2-4df7-b987-f49cd4d4f481)
-    (property "Reference" "R14" (at 250.19 87.63 0)
+    (property "Reference" "R66" (at 250.19 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 250.19 90.17 0)
@@ -7183,17 +6889,12 @@
     (property "Datasheet" "~" (at 251.46 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e9c7f25d-16b3-4734-a338-6567d34bbaa3))
-    (pin "2" (uuid 1d58cabb-d5b0-4017-bf13-f546979fdcd5))
+    (pin "1" (uuid a424d910-588b-4155-9be1-bef5ec8bfc47))
+    (pin "2" (uuid 5ea1ecb0-8eb2-4bae-9353-05d2473ace6b))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R14") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R26") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R66") (unit 1)
         )
       )
     )
@@ -7202,7 +6903,7 @@
   (symbol (lib_name "PMN48XP_1") (lib_id "Transistor_FET:PMN48XP") (at 185.42 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d76d847a-0c82-4112-9c75-0e410a34dc1f)
-    (property "Reference" "Q17" (at 185.42 63.5 90)
+    (property "Reference" "Q12" (at 185.42 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SSM6J808R" (at 185.42 66.04 90)
@@ -7214,21 +6915,16 @@
     (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMN48XP.pdf" (at 185.42 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2e8bf939-b67e-44d9-8729-62fea89498fb))
-    (pin "2" (uuid de64f04b-9c3f-4c87-9dcd-a63e53d464ef))
-    (pin "3" (uuid 6e3200db-ed19-4c5a-811f-aedf6e7daf12))
-    (pin "4" (uuid 3357ff03-917f-4634-b0a9-94fae8aeeaff))
-    (pin "5" (uuid 8c8b17d2-19d9-498a-a2cc-334c925b4642))
-    (pin "6" (uuid d611aa6c-2e90-40cc-a788-359b16536608))
+    (pin "1" (uuid 8675b0ba-2341-4262-aa1b-bde70af7ff91))
+    (pin "2" (uuid e5cf85fe-1307-4a26-b601-79da662834c8))
+    (pin "3" (uuid 11767cfa-0396-4ebc-a60d-aed91fe157da))
+    (pin "4" (uuid 7d61b37a-ca12-4a17-ace9-c683e1554599))
+    (pin "5" (uuid b85c72e4-3439-4e47-8760-6cc7c5edfa6f))
+    (pin "6" (uuid 6390bba4-ebf2-4b02-ab3b-30fef83dc48e))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q17") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q7") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q12") (unit 1)
         )
       )
     )
@@ -7237,7 +6933,7 @@
   (symbol (lib_id "Device:D_Schottky") (at 236.22 71.12 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d7a3a38a-5560-4779-819a-8a1547c46a03)
-    (property "Reference" "D3" (at 236.22 76.2 0)
+    (property "Reference" "D7" (at 236.22 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SS2040FL" (at 236.22 73.66 0)
@@ -7249,17 +6945,12 @@
     (property "Datasheet" "~" (at 236.22 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 57d4cb0f-3dcb-4ad8-88be-c5027e76aadd))
-    (pin "2" (uuid 759a1050-5ee7-42fa-aaf8-5d1890ef0186))
+    (pin "1" (uuid 32a2e36a-4ffb-4d4a-8546-823c4edd47e7))
+    (pin "2" (uuid 647867fc-e25f-41b8-aaa6-51e57704d037))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "D3") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "D5") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -7268,7 +6959,7 @@
   (symbol (lib_id "power:GND") (at 302.26 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid da23baa4-3765-4479-9dc7-852221423666)
-    (property "Reference" "#PWR018" (at 302.26 80.01 0)
+    (property "Reference" "#PWR0101" (at 302.26 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 302.26 77.47 0)
@@ -7280,16 +6971,11 @@
     (property "Datasheet" "" (at 302.26 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 993d7877-a95f-4e4f-93df-28e74818d098))
+    (pin "1" (uuid e5b07379-d07c-4d00-8356-3757019f986d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR018") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR055") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -7298,7 +6984,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 309.88 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid da41a988-a13c-46e6-bb0a-22f3d62dc1b2)
-    (property "Reference" "C33" (at 312.42 119.38 0)
+    (property "Reference" "C28" (at 312.42 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 312.42 121.92 0)
@@ -7310,12 +6996,37 @@
     (property "Datasheet" "~" (at 309.88 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5499963a-f15b-4679-85fc-eb3898a3af4a))
-    (pin "2" (uuid 01551941-61de-4039-8110-9bdc6e1c7c30))
+    (pin "1" (uuid 3030208c-e7e2-4f8a-8c81-e1f3a23bbf7c))
+    (pin "2" (uuid d64d3b19-8d73-4b6b-a312-10770e2fde7f))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C33") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C28") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 144.78 93.98 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid daab3c90-6e0a-4c0e-9ba9-9c87331baf3f)
+    (property "Reference" "#PWR075" (at 144.78 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 144.78 99.06 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 144.78 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 144.78 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e4d32209-6088-4781-ad91-598471c507fa))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -7324,7 +7035,7 @@
   (symbol (lib_id "Device:C") (at 314.96 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de4dd176-1a47-4089-a993-05edfb1cc7af)
-    (property "Reference" "C8" (at 309.88 63.5 0)
+    (property "Reference" "C30" (at 309.88 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 309.88 68.58 0)
@@ -7336,17 +7047,12 @@
     (property "Datasheet" "~" (at 314.96 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 423792ff-f736-4e72-b0cf-7f368b6d2912))
-    (pin "2" (uuid 61ed1754-2682-44e1-9f61-2925f46066a2))
+    (pin "1" (uuid a75f7308-b69f-4bee-a58a-9d6e0e91fd30))
+    (pin "2" (uuid 4dff1a49-7f96-4614-808d-bff5b97b0a80))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C8") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C24") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -7355,7 +7061,7 @@
   (symbol (lib_id "power:GND") (at 322.58 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e49942da-a4cb-48f2-acc4-d034a128c688)
-    (property "Reference" "#PWR0102" (at 322.58 130.81 0)
+    (property "Reference" "#PWR0108" (at 322.58 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 322.58 128.27 0)
@@ -7367,11 +7073,11 @@
     (property "Datasheet" "" (at 322.58 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c636864d-a003-4c57-902a-b63bbbb4ddaf))
+    (pin "1" (uuid f130f050-072b-46b9-a77b-530489327da4))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0102") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -7380,7 +7086,7 @@
   (symbol (lib_id "power:GNDD") (at 256.54 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e842761f-fa55-4bcd-9604-807131bf03a5)
-    (property "Reference" "#PWR012" (at 256.54 115.57 0)
+    (property "Reference" "#PWR092" (at 256.54 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 256.54 113.03 0)
@@ -7392,16 +7098,11 @@
     (property "Datasheet" "" (at 256.54 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 186474c6-e798-4978-b481-93ceceed0cf8))
+    (pin "1" (uuid 124791eb-fab1-4d13-90f4-3066f36622ea))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR012") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR048") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR092") (unit 1)
         )
       )
     )
@@ -7410,7 +7111,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 281.94 205.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e8abef0a-fb7d-43b3-843f-47fee872bf5c)
-    (property "Reference" "TP3" (at 281.94 213.36 0)
+    (property "Reference" "TP1" (at 281.94 213.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 281.94 210.82 0)
@@ -7422,15 +7123,10 @@
     (property "Datasheet" "~" (at 276.86 205.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 88cf9d0a-20ad-4811-ad65-338e2ff01781))
+    (pin "1" (uuid 0ab9044c-71cb-42d5-b864-6b68756d6258))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "TP3") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
           (reference "TP1") (unit 1)
         )
       )
@@ -7440,7 +7136,7 @@
   (symbol (lib_id "Device:C") (at 134.62 223.52 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e90984b4-95e0-483e-8850-3fffe0bef26a)
-    (property "Reference" "C23" (at 132.08 228.6 0)
+    (property "Reference" "C21" (at 132.08 228.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ADJ_ST" (at 132.08 226.06 0)
@@ -7452,17 +7148,12 @@
     (property "Datasheet" "~" (at 134.62 223.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9a6baf92-ddb8-4860-9fc7-edbb67f69fc9))
-    (pin "2" (uuid d2c14f5c-dc14-4f3c-a6bc-c1c8b2df0f19))
+    (pin "1" (uuid 74524c99-a0ae-4c1b-8e17-1f1bb3d26944))
+    (pin "2" (uuid fdbea8db-2056-4e23-8e2c-a3eafa8581e7))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "C23") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C17") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -7471,7 +7162,7 @@
   (symbol (lib_id "Device:R") (at 335.28 220.98 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ecc875d3-36b3-4e80-8801-ee11eb8ea563)
-    (property "Reference" "R65" (at 335.28 226.06 90)
+    (property "Reference" "R73" (at 335.28 226.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2k" (at 335.28 223.52 90)
@@ -7483,17 +7174,12 @@
     (property "Datasheet" "~" (at 335.28 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c9755851-0906-4862-90cc-f7d771ed63e1))
-    (pin "2" (uuid 735479e1-6e51-451d-b1ac-de1aff941011))
+    (pin "1" (uuid be717c6e-626b-4682-a969-d80821450727))
+    (pin "2" (uuid 3705e256-039b-4003-8aa1-010317f943d4))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R65") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R33") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R73") (unit 1)
         )
       )
     )
@@ -7502,7 +7188,7 @@
   (symbol (lib_id "Device:Q_PNP_BEC") (at 246.38 152.4 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f174a78b-3942-4277-a641-68d94a8a3088)
-    (property "Reference" "Q25" (at 243.84 144.78 0)
+    (property "Reference" "Q17" (at 243.84 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "S8550" (at 243.84 147.32 0)
@@ -7514,18 +7200,38 @@
     (property "Datasheet" "~" (at 246.38 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b508d08c-b5f3-4be9-9766-bd04646f5757))
-    (pin "2" (uuid 412dff0c-44a1-4b78-aeb9-7358fe9d6476))
-    (pin "3" (uuid d07572ae-e28b-4337-bcee-7a1846628171))
+    (pin "1" (uuid 3adf0989-ed9c-40f0-b078-d9d7a810cb03))
+    (pin "2" (uuid 28800fe2-c19b-4c0f-b10d-d39f4d8b3f40))
+    (pin "3" (uuid c4609939-fc77-4bfb-b2d0-d4358a49e90f))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "Q25") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "Q17") (unit 1)
         )
       )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "Q12") (unit 1)
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 147.32 96.52 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f2698059-eec2-4cda-bd05-e99f685defb0)
+    (property "Reference" "#PWR079" (at 147.32 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 151.13 93.98 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 147.32 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 147.32 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fcf533a4-c49e-4638-ac87-3b661414ad13))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR079") (unit 1)
         )
       )
     )
@@ -7534,7 +7240,7 @@
   (symbol (lib_id "power:GND") (at 116.84 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f74e6ac9-d637-4310-afa1-3814ec92b886)
-    (property "Reference" "#PWR098" (at 116.84 74.93 0)
+    (property "Reference" "#PWR063" (at 116.84 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 73.66 0)
@@ -7546,16 +7252,11 @@
     (property "Datasheet" "" (at 116.84 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1cd8e5ba-e25b-4fed-bccc-ee11919c3ea0))
+    (pin "1" (uuid 50f6315d-1a7f-458c-ae9e-b34ad3556d97))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR098") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR021") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -7564,7 +7265,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 309.88 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f9014e36-5803-4ca5-9ef9-f9991683bf8a)
-    (property "Reference" "C23" (at 312.42 142.24 0)
+    (property "Reference" "C29" (at 312.42 142.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 312.42 144.78 0)
@@ -7576,12 +7277,12 @@
     (property "Datasheet" "~" (at 309.88 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 55ee82c7-a94f-4c5f-85e9-78fa4c81510b))
-    (pin "2" (uuid 23bcb6de-c8e3-485a-bede-b343c28c66ed))
+    (pin "1" (uuid 7e09f7a5-7dd2-4515-a4bc-409c3817eb50))
+    (pin "2" (uuid e3ac6d7a-d261-4f9d-a88b-9386b01329c0))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "C23") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "C29") (unit 1)
         )
       )
     )
@@ -7590,7 +7291,7 @@
   (symbol (lib_id "power:VBUS") (at 109.22 200.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f9497bde-6cb6-4901-84c0-ff9ffe76e0e8)
-    (property "Reference" "#PWR0123" (at 109.22 204.47 0)
+    (property "Reference" "#PWR061" (at 109.22 204.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 109.22 196.85 0)
@@ -7602,16 +7303,11 @@
     (property "Datasheet" "" (at 109.22 200.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f005e3f8-ec7e-43e2-9514-a80149c43c7e))
+    (pin "1" (uuid a44ad2c3-f9e5-447e-ba00-34c8b083e083))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR0123") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR019") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -7620,7 +7316,7 @@
   (symbol (lib_id "Device:R") (at 254 220.98 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f95283f0-1372-47fa-bd82-dd05b4148a44)
-    (property "Reference" "R15" (at 256.54 219.7099 0)
+    (property "Reference" "R67" (at 256.54 219.7099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 256.54 222.2499 0)
@@ -7632,17 +7328,12 @@
     (property "Datasheet" "~" (at 254 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2b2cc413-0ae6-4210-8ade-8af6411f9bfc))
-    (pin "2" (uuid 1506d936-3ff4-4d2f-81e1-41ab2bfcf12c))
+    (pin "1" (uuid 5e318abd-e2a3-48fe-ad7a-ba97c2356597))
+    (pin "2" (uuid 1d80ffec-a837-45ed-af1b-4a6e43350d2d))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "R15") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "R27") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "R67") (unit 1)
         )
       )
     )
@@ -7651,7 +7342,7 @@
   (symbol (lib_id "power:GNDD") (at 335.28 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fd822d0b-3380-49cf-adc2-4159d4c2c912)
-    (property "Reference" "#PWR027" (at 335.28 153.67 0)
+    (property "Reference" "#PWR0116" (at 335.28 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDD" (at 335.28 151.13 0)
@@ -7663,16 +7354,11 @@
     (property "Datasheet" "" (at 335.28 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f5893625-fecd-4746-92b8-8b4935f176a2))
+    (pin "1" (uuid 0e126866-6d71-4d9d-b600-42f2796e4556))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR027") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR064") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0116") (unit 1)
         )
       )
     )
@@ -7681,7 +7367,7 @@
   (symbol (lib_id "power:+BATT") (at 335.28 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe8224ab-0174-4dc1-af8d-43ee74dc227b)
-    (property "Reference" "#PWR0119" (at 335.28 118.11 0)
+    (property "Reference" "#PWR0113" (at 335.28 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 339.09 111.76 0)
@@ -7693,11 +7379,11 @@
     (property "Datasheet" "" (at 335.28 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9e1f8efc-c18c-4945-b709-41417911e28e))
+    (pin "1" (uuid f210c1ed-500c-4a85-840e-90d1c19156b7))
     (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR0119") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR0113") (unit 1)
         )
       )
     )
@@ -7706,7 +7392,7 @@
   (symbol (lib_id "power:GND") (at 129.54 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe8d662c-df45-4b35-8eec-0b839ba80627)
-    (property "Reference" "#PWR04" (at 129.54 49.53 0)
+    (property "Reference" "#PWR071" (at 129.54 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 129.54 48.26 0)
@@ -7718,16 +7404,11 @@
     (property "Datasheet" "" (at 129.54 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b8bed741-a32b-4db7-90fd-6be01dd99ad6))
+    (pin "1" (uuid 913e9490-9660-4b8e-a8a7-f6978fee4680))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR029") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -7736,7 +7417,7 @@
   (symbol (lib_id "power:+BATT") (at 175.26 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fec683e8-fceb-4a8a-b9ba-793b668517b9)
-    (property "Reference" "#PWR038" (at 175.26 72.39 0)
+    (property "Reference" "#PWR081" (at 175.26 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 175.26 64.77 0)
@@ -7748,16 +7429,11 @@
     (property "Datasheet" "" (at 175.26 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 959ac977-8d96-4a1d-b492-ad9c165ed328))
+    (pin "1" (uuid d73974c2-8e08-4845-a964-0191757b9aaa))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR038") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR037") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -7766,7 +7442,7 @@
   (symbol (lib_id "power:+3.3V") (at 292.1 203.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fef9a39f-e509-49af-ad97-95ae70a7ac7c)
-    (property "Reference" "#PWR014" (at 292.1 207.01 0)
+    (property "Reference" "#PWR095" (at 292.1 207.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 292.1 199.39 0)
@@ -7778,16 +7454,11 @@
     (property "Datasheet" "" (at 292.1 203.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4b87f803-96f3-412b-bebb-28a10ff0091b))
+    (pin "1" (uuid d64a605c-bd0d-41a1-a4b8-774ccc572011))
     (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR014") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR051") (unit 1)
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/36f16cb4-fbd3-4447-a424-4afdbe558135"
+          (reference "#PWR095") (unit 1)
         )
       )
     )

@@ -1,5 +1,104 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 689a9e74-f202-4ea4-bfbb-4341f2549250)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (wire (pts (xy 71.12 22.86) (xy 73.66 22.86))
+    (stroke (width 0) (type default))
+    (uuid 501b1fb1-b245-492a-8bec-da3fd4ffa4e4)
+  )
+
+  (text "マイコン側のラベルと階層シート側のラベルをそれぞれ対応するように書き換える\n電解コンの耐圧注意" (at 119.38 10.16 0)
+    (effects (font (size 5.56 5.56)) (justify left bottom))
+    (uuid 7be4f960-c4d7-4360-b936-412547853e63)
+  )
+
+  (global_label "V_Meas." (shape input) (at 73.66 22.86 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 861b1850-ac80-480a-9f39-6be727d51a5e)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 84.0233 22.86 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+
+  (sheet (at 73.66 81.28) (size 40.64 35.56) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 24ae560a-4b26-4668-af95-4f511f2fb172)
+    (property "Sheetname" "RingNW" (at 73.66 80.5684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "RingNW.kicad_sch" (at 73.66 117.4246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 50.8 17.78) (size 20.32 10.16) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 36f16cb4-fbd3-4447-a424-4afdbe558135)
+    (property "Sheetname" "Power" (at 50.8 17.0684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 50.8 28.5246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "V_Meas." input (at 71.12 22.86 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid f80bde61-c26f-40ad-bf1f-241577c94f04)
+    )
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 190.5 81.28) (size 33.02 35.56) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid a0e6e20f-c732-4650-b515-927ea2aa6bd5)
+    (property "Sheetname" "FPGA_TangPrimerCore" (at 190.5 80.5684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "FPGA_TangPrimerCore.kicad_sch" (at 190.5 117.4246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 137.16 81.28) (size 33.02 35.56) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid fddad0c3-2af8-46e3-8794-fa1122d24d51)
+    (property "Sheetname" "RasPi_CM4" (at 137.16 80.5684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "RasPi_CM4.kicad_sch" (at 137.16 117.4246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250" (page "6"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
