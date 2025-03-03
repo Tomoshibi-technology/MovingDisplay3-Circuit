@@ -655,33 +655,33 @@
     (uuid eb4dc5fa-addf-407f-8a11-b670341857e5)
   )
 
-  (hierarchical_label "Slide_SW0" (shape input) (at 132.08 78.74 0) (fields_autoplaced)
+  (hierarchical_label "SlideSW0" (shape input) (at 132.08 78.74 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 099b9619-07b7-4385-9d8a-d1ce4148db77)
+    (uuid 08312898-e81e-445e-9ed9-062a1410362e)
   )
   (hierarchical_label "LED0" (shape input) (at 116.84 48.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 549542e0-94bd-4bc3-8f0d-fe295ffa1123)
   )
-  (hierarchical_label "DIP_SW3" (shape input) (at 144.78 119.38 0) (fields_autoplaced)
+  (hierarchical_label "DIPSW0" (shape input) (at 144.78 111.76 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 81898c6c-2a3a-4197-af71-6d358fca69cb)
+    (uuid 5f6ed5b7-e7e5-4df3-8e98-5633b42715bc)
+  )
+  (hierarchical_label "DIPSW1" (shape input) (at 144.78 114.3 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 88c3edcc-8ffa-4c18-8bc6-b86695657521)
   )
   (hierarchical_label "LED1" (shape input) (at 116.84 58.42 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a38974cb-75b6-4556-bdf4-d3f3c69ec34d)
   )
-  (hierarchical_label "DIP_SW0" (shape input) (at 144.78 111.76 0) (fields_autoplaced)
+  (hierarchical_label "DIPSW3" (shape input) (at 144.78 119.38 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d7d2bde8-9d20-492b-8795-8f49a2886725)
+    (uuid ee46d350-0de5-454d-979d-929b7d0a5b8d)
   )
-  (hierarchical_label "DIP_SW1" (shape input) (at 144.78 114.3 0) (fields_autoplaced)
+  (hierarchical_label "DIPSW2" (shape input) (at 144.78 116.84 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d888167e-50f3-43a3-a10c-d062d654853d)
-  )
-  (hierarchical_label "DIP_SW2" (shape input) (at 144.78 116.84 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dcf58e85-3395-452f-8ad5-c536f9b1a98a)
+    (uuid f3dd86ad-f9df-466e-9591-4a7f68a22f31)
   )
 
   (symbol (lib_id "power:+3.3V") (at 114.3 83.82 0) (unit 1)
@@ -699,7 +699,7 @@
     (property "Datasheet" "" (at 114.3 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a4c5569c-bb0f-47ba-b79d-40b08eaa0d28))
+    (pin "1" (uuid 22c097ae-71a7-4df0-bcdb-0ff2f2e831bf))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -715,7 +715,7 @@
     (property "Reference" "R5" (at 124.46 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "2k" (at 124.46 60.96 90)
+    (property "Value" "1k" (at 124.46 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 124.46 60.198 90)
@@ -724,8 +724,8 @@
     (property "Datasheet" "~" (at 124.46 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8ad5d38d-9c5e-4f74-881c-cced9685a572))
-    (pin "2" (uuid aeb79e6c-38a0-4555-8d32-846e431ca6e4))
+    (pin "1" (uuid bf966cbf-588b-4dfd-9fa9-d85f156875b1))
+    (pin "2" (uuid 4f792b99-1b0a-4589-bb9e-7b6b3de3117e))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -750,8 +750,8 @@
     (property "Datasheet" "~" (at 137.16 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b37e9341-2949-48e8-abf5-e93cdef264de))
-    (pin "2" (uuid 1e1f1f6f-9bd1-4a5a-9f1e-6fdd4ff0e473))
+    (pin "1" (uuid 4d57995e-3d1f-4238-bf68-0aea6a7a6970))
+    (pin "2" (uuid 7828081a-0654-4286-9e74-0835b106bbb6))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -776,8 +776,8 @@
     (property "Datasheet" "~" (at 142.24 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ec631a0b-ade2-4b9a-94f6-85223ccd009e))
-    (pin "2" (uuid 0597dc1c-a1a6-4853-a8a7-0c00e979593c))
+    (pin "1" (uuid bd6155ed-0b01-43c9-badd-944913fc1c65))
+    (pin "2" (uuid 2e1bcb54-ea62-4ab8-a485-a60d1a9eec13))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -802,7 +802,7 @@
     (property "Datasheet" "" (at 142.24 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1fb675e7-ed2a-4e48-8804-86fe02b9dc1f))
+    (pin "1" (uuid bdbbfbf0-43c4-4739-ad63-de2e557d2fb4))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -827,7 +827,7 @@
     (property "Datasheet" "" (at 142.24 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 12b09df5-1f5a-4676-b8e7-4ebd2f95e87b))
+    (pin "1" (uuid 439fdd76-d264-478b-be5a-e1a22d8f9eb9))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -852,8 +852,8 @@
     (property "Datasheet" "~" (at 127 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 59d2e618-d806-46dd-bb65-0d16b0a18d5a))
-    (pin "2" (uuid 8c0af388-8bf6-42d5-8aea-cb1a2099b9e8))
+    (pin "1" (uuid 1fa6778f-f484-4f9f-a2e6-8e50b287fbd5))
+    (pin "2" (uuid ea695c7a-9cfb-41fd-b1a9-94f8a55148df))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -878,14 +878,14 @@
     (property "Datasheet" "~" (at 116.84 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "8" (uuid 301df3aa-f12d-4196-8d5b-cebcec07a7ec))
-    (pin "7" (uuid 93eadb22-9965-46a2-9024-af5406399b05))
-    (pin "3" (uuid 7afe723b-d0cf-49c0-9708-3eb64e43829a))
-    (pin "6" (uuid c7a92121-6f97-4098-be14-efe421125923))
-    (pin "1" (uuid 5f0a96e2-85d6-4630-9d49-0f18d6e6e901))
-    (pin "2" (uuid 56c8f70a-08bd-4b29-a1fc-22ef976282a2))
-    (pin "4" (uuid 20283fa5-4305-4425-bb60-2bd5f693d5b0))
-    (pin "5" (uuid 0fb8579d-11ab-4453-b4ef-a1f6c69f744a))
+    (pin "8" (uuid 8a1399d6-3a0a-44ed-970b-e315090e90a5))
+    (pin "7" (uuid e0c96aa0-dc4a-4a8b-845a-cda81a41a901))
+    (pin "3" (uuid 01fbdd9c-0475-4e4c-a350-cfc5fc0e9882))
+    (pin "6" (uuid 0a039008-ce25-4fa5-9dab-cfeb22c12977))
+    (pin "1" (uuid fecd4bde-f8f9-4523-91e7-704f701d7474))
+    (pin "2" (uuid 13a019bc-92ec-4f56-a40c-6475c25305b9))
+    (pin "4" (uuid 858d1dd6-fab7-43a3-9174-01c30648ef27))
+    (pin "5" (uuid 809cbe39-995b-4dc4-b626-401582d880e6))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -910,8 +910,8 @@
     (property "Datasheet" "~" (at 134.62 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 93eef04e-7c96-4eb1-bf3d-acd458a4f6de))
-    (pin "2" (uuid a3ad863e-2083-4072-b512-59ee98a6068f))
+    (pin "1" (uuid fee9afc6-b848-4dbf-bbbf-277bc9f6b509))
+    (pin "2" (uuid 5e7627ff-6ca4-4c1a-8b6c-8f04b4397bc0))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -936,9 +936,9 @@
     (property "Datasheet" "~" (at 121.92 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 218fdd5d-8b75-44ec-880a-0eed62d5ff05))
-    (pin "2" (uuid 92466010-f7fc-4952-83d0-94307e7e9487))
-    (pin "3" (uuid 0dd9478f-4e17-48d5-a614-59e5e54bc957))
+    (pin "1" (uuid c657a348-1df2-49a1-a3a0-e856f4877626))
+    (pin "2" (uuid de38aa3d-6df7-4eb0-a73f-9f3841aef5a3))
+    (pin "3" (uuid 0167d5e6-b029-4dc2-9324-9ee3cbb5a640))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -963,8 +963,8 @@
     (property "Datasheet" "~" (at 137.16 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dfffee59-2c8d-4a17-bb85-820b53c30b16))
-    (pin "2" (uuid 3d9836a1-46be-4bf2-96a7-d30efce274b0))
+    (pin "1" (uuid 4501bda7-825d-42dc-bb5e-69612258602f))
+    (pin "2" (uuid 25ff574c-8b6c-4ec7-a91e-021feb67ab25))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -980,7 +980,7 @@
     (property "Reference" "R4" (at 124.46 53.34 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "2k" (at 124.46 50.8 90)
+    (property "Value" "1k" (at 124.46 50.8 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 124.46 50.038 90)
@@ -989,8 +989,8 @@
     (property "Datasheet" "~" (at 124.46 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 24d960b7-f229-4da7-92e3-5057ef00f2c7))
-    (pin "2" (uuid d108edaa-e4f3-4f84-a248-53cc79f4ae9f))
+    (pin "1" (uuid 64d2fe70-1a45-455a-a327-53fda4cc9f31))
+    (pin "2" (uuid 2495138d-5aa8-4ee5-9f33-7e8286d9be52))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -1015,7 +1015,7 @@
     (property "Datasheet" "" (at 106.68 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fb3b70d2-d50c-480b-bf87-533b8616518b))
+    (pin "1" (uuid 4ffdb64d-7ab7-4a4c-b470-ad5b8084e0bc))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -1040,7 +1040,7 @@
     (property "Datasheet" "" (at 142.24 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9080ac4f-3e92-4610-8f10-00825550deaa))
+    (pin "1" (uuid eb5ce8d1-49aa-4ae2-8670-173d3d7efd30))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -1065,8 +1065,8 @@
     (property "Datasheet" "~" (at 134.62 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dea6a7d4-e3da-4553-bcea-d960e6a58696))
-    (pin "2" (uuid a973f4bc-de92-421c-b34a-654a59656ece))
+    (pin "1" (uuid 1c1118a8-a690-42bb-906f-1311fe06a5d3))
+    (pin "2" (uuid 9630baab-7d9d-4d84-9482-13aeaf8813fd))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -1091,7 +1091,7 @@
     (property "Datasheet" "" (at 144.78 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e5dff4db-e33f-42fa-bf22-b6c0766a7bb0))
+    (pin "1" (uuid f162ccf5-c961-4fa9-bd09-29dca660bf4c))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
@@ -1116,8 +1116,8 @@
     (property "Datasheet" "~" (at 132.08 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e8fbb445-0e83-41af-b005-ad39ea0bad89))
-    (pin "2" (uuid 281e2bf6-f0c4-4de2-924f-d3b5c3c1cda7))
+    (pin "1" (uuid 0fda5987-3082-48e8-830e-70871564799a))
+    (pin "2" (uuid f2f1ebc2-b14e-4b73-9825-b8a2a64aa9fa))
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/24ae560a-4b26-4668-af95-4f511f2fb172/2e4c9748-adeb-4e60-9765-444b8aabd502"
