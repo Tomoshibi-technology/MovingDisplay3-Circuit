@@ -424,7 +424,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../Program Files/KiCad/7.0/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -456,7 +456,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -501,6 +501,26 @@
     [
       "e4ed8e7b-a26f-475c-8428-58a8505b00cf",
       "UI_TangPrimer"
+    ],
+    [
+      "69fce92a-28f6-4191-9f2f-418081756bee",
+      "UI_RasPi"
+    ],
+    [
+      "2ec7d498-8e54-4c52-b9ab-4312d8412cc4",
+      "SD_Card"
+    ],
+    [
+      "9334b424-6a5a-4e63-a4e0-775039914fa8",
+      "DAC"
+    ],
+    [
+      "2743e81b-c35a-4f5b-a403-d8487e16cd8c",
+      "Ethernet"
+    ],
+    [
+      "ffa9c1a5-d3a0-4e0c-a61b-1846c86fcc40",
+      "FAN"
     ]
   ],
   "text_variables": {}
