@@ -4523,33 +4523,6 @@
     )
   )
 
-  (symbol (lib_id "Regulator_Linear:AMS1117CD-3.3") (at 236.22 213.36 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 86b00736-b595-4a22-a6d7-fb2605d6fcbe)
-    (property "Reference" "U7" (at 236.22 207.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AZ1084CD-3.3" (at 236.22 209.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 236.22 208.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 238.76 219.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5ec32ebb-b79e-485b-a829-78a4533a3d57))
-    (pin "2" (uuid 8f6a89cb-de2a-4092-b3b5-73d9a81351c4))
-    (pin "3" (uuid 6c664cf2-d235-4a8f-9fc0-5edc88167342))
-    (instances
-      (project "2ndLayer"
-        (path "/5cc21ad3-a17c-4615-8f1b-99935a785699/3369f809-2737-4dac-a1dc-b9b69997c920"
-          (reference "U7") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 231.14 43.18 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89bf3912-b51f-4a8e-93e6-4d591a3d8f79)
@@ -5114,6 +5087,33 @@
       (project "2ndLayer"
         (path "/5cc21ad3-a17c-4615-8f1b-99935a785699/3369f809-2737-4dac-a1dc-b9b69997c920"
           (reference "C17") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:AMS1117CD-3.3") (at 236.22 213.36 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bea27e1f-880b-4897-adf9-669c85d53066)
+    (property "Reference" "U7" (at 236.22 207.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "AZ1117CH-3.3" (at 236.22 209.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 236.22 208.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 238.76 219.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1b802ae4-f3dc-4e43-bfb2-b1f34094538d))
+    (pin "2" (uuid 6f639536-c07b-43ed-b934-ffcc141b9b41))
+    (pin "3" (uuid dc3e2758-9a69-4934-9e2e-4ab5d2fc973f))
+    (instances
+      (project "2ndLayer"
+        (path "/5cc21ad3-a17c-4615-8f1b-99935a785699/3369f809-2737-4dac-a1dc-b9b69997c920"
+          (reference "U7") (unit 1)
         )
       )
     )

@@ -3803,33 +3803,6 @@
     )
   )
 
-  (symbol (lib_id "Regulator_Linear:AMS1117CD-3.3") (at 236.22 213.36 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 06a1e715-a22f-452b-9487-c5bfc954d3fa)
-    (property "Reference" "U1" (at 236.22 207.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AZ1084CD-3.3" (at 236.22 209.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 236.22 208.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 238.76 219.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7dd6df56-40ea-46e5-b14d-3129c1e608ae))
-    (pin "2" (uuid c270e7f8-77d8-4dd9-8a20-ebb86063bc97))
-    (pin "3" (uuid f96c8d4d-b2fe-47b0-82bb-cad66b3a719f))
-    (instances
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "U1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:L") (at 246.38 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ad68737-6e45-4c96-a3f2-1258e3a27582)
@@ -6783,6 +6756,33 @@
       (project "Drive"
         (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
           (reference "C21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:AMS1117CD-3.3") (at 236.22 213.36 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b84da87c-a7ee-4e9e-88af-bdb47c2c8ae6)
+    (property "Reference" "U1" (at 236.22 207.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "AZ1117CH-3.3" (at 236.22 209.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 236.22 208.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 238.76 219.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fb67cd95-f3aa-4c42-b047-4933743e4303))
+    (pin "2" (uuid d7a19aa1-2448-4630-96be-64bd0b5dc35e))
+    (pin "3" (uuid abaf5422-b178-475e-a92f-58624311f893))
+    (instances
+      (project "Drive"
+        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
+          (reference "U1") (unit 1)
         )
       )
     )

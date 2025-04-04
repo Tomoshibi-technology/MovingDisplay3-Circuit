@@ -521,6 +521,14 @@
     [
       "ffa9c1a5-d3a0-4e0c-a61b-1846c86fcc40",
       "FAN"
+    ],
+    [
+      "43daae10-1159-44a4-b6d7-7cc0f30c7fe6",
+      "Serial_Converter"
+    ],
+    [
+      "ac6ce566-f0cf-4831-8e6b-6ce1bd313790",
+      "LiDAR"
     ]
   ],
   "text_variables": {}
