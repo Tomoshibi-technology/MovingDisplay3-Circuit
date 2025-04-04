@@ -3464,7 +3464,7 @@
     (property "Value" "Conn_01x14_Pin" (at 35.56 116.84 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "MyLibrary:BoxHeader_2x07_P1.27mm_Horizontal" (at 38.1 134.62 0)
+    (property "Footprint" "TomoshibiLibrary:BoxHeader_2x07_P1.27mm_Horizontal" (at 38.1 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 38.1 134.62 0)

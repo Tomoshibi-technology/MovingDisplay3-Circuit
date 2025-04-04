@@ -116,7 +116,7 @@
         )
       )
     )
-    (symbol "MyLibrary:DAC_PT8211S" (in_bom yes) (on_board yes)
+    (symbol "TomoshibiLibrary:DAC_PT8211S" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -15.24 -5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -529,7 +529,7 @@
     )
   )
 
-  (symbol (lib_id "MyLibrary:DAC_PT8211S") (at 139.7 78.74 0) (unit 1)
+  (symbol (lib_id "TomoshibiLibrary:DAC_PT8211S") (at 139.7 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d2dca52-ffca-48c0-85e6-3ea07778fe23)
     (property "Reference" "U18" (at 124.46 83.82 0)

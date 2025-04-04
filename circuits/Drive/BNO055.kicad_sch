@@ -475,7 +475,7 @@
     (property "Value" "BNO055" (at 154.94 101.6 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MyLibrary:Sensor_Motion_Aktk_BNO055" (at 158.75 100.33 0)
+    (property "Footprint" "TomoshibiLibrary:Sensor_Motion_Aktk_BNO055" (at 158.75 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf" (at 160.02 83.82 0)

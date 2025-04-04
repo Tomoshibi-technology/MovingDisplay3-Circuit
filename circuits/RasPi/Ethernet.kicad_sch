@@ -1125,7 +1125,7 @@
     (property "Value" "RJ45_Hanrun_HR911105A_Horizontal" (at 151.13 54.61 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "MyLibrary:Connector_RJ45_LPJK7001AGNL" (at 149.86 53.34 0)
+    (property "Footprint" "TomoshibiLibrary:Connector_RJ45_LPJK7001AGNL" (at 149.86 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811141815_HANRUN-Zhongshan-HanRun-Elec-HR911105A_C12074.pdf" (at 149.86 50.8 0)

@@ -1384,7 +1384,7 @@
     (property "Value" "SW_SPDT" (at 114.3 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "MyLibrary:SW_Slide_3P_SPDT" (at 121.92 83.82 0)
+    (property "Footprint" "TomoshibiLibrary:SW_Slide_3P_SPDT" (at 121.92 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 121.92 83.82 0)
