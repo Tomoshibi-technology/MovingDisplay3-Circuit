@@ -700,6 +700,33 @@
     )
   )
 
+  (symbol (lib_id "Switch:SW_SPDT") (at 132.08 129.54 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 98b9770c-2825-4af7-bcb5-69c99c9e986a)
+    (property "Reference" "SW6" (at 124.46 136.9314 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SW_SPDT" (at 124.46 134.62 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TomoshibiLibrary:SW_Slide_SPDT_SSSS213202" (at 132.08 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 132.08 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4316f179-dec6-4d5a-bd92-b534f70a162c))
+    (pin "2" (uuid 745ff081-7cff-40e2-ae84-e50387ee2ebf))
+    (pin "3" (uuid 3641739f-4d78-49d0-b1af-6fbeecc49b79))
+    (instances
+      (project "RasPi"
+        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/a0e6e20f-c732-4650-b515-927ea2aa6bd5/e4ed8e7b-a26f-475c-8428-58a8505b00cf"
+          (reference "SW6") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+3.3V") (at 124.46 129.54 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8f12753-a4cd-4d44-9001-2a3c86c12680)
@@ -798,33 +825,6 @@
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/a0e6e20f-c732-4650-b515-927ea2aa6bd5/e4ed8e7b-a26f-475c-8428-58a8505b00cf"
           (reference "R83") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_SPDT") (at 132.08 129.54 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ffe25225-6589-462a-b89a-92efcbed53cd)
-    (property "Reference" "SW6" (at 124.46 136.9314 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SW_SPDT" (at 124.46 134.62 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TomoshibiLibrary:SW_Slide_3P_SPDT" (at 132.08 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 132.08 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c657a348-1df2-49a1-a3a0-e856f4877626))
-    (pin "2" (uuid de38aa3d-6df7-4eb0-a73f-9f3841aef5a3))
-    (pin "3" (uuid 0167d5e6-b029-4dc2-9324-9ee3cbb5a640))
-    (instances
-      (project "RasPi"
-        (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/a0e6e20f-c732-4650-b515-927ea2aa6bd5/e4ed8e7b-a26f-475c-8428-58a8505b00cf"
-          (reference "SW6") (unit 1)
         )
       )
     )

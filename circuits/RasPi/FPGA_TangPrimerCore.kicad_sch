@@ -1463,10 +1463,6 @@
     (uuid febfeb87-3dcc-4481-ad66-8e4ce78ecf91)
   )
 
-  (text "リセット用ピンはRECONFIG?\nプルアップをつけるかどうか" (at 147.32 33.02 0)
-    (effects (font (size 5.56 5.56)) (justify left bottom))
-    (uuid 8d5d6b74-3edd-45d0-9ec9-59f18a414037)
-  )
   (text "パスコン" (at 17.78 109.22 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9e950309-eb61-4247-a1b5-e8eca88607aa)
