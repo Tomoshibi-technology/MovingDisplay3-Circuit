@@ -5088,7 +5088,7 @@
     (property "Value" "SW_SPDT_White" (at 203.2 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TomoshibiLibrary:SW_Slide_SPDT_White" (at 203.2 40.64 0)
+    (property "Footprint" "TomoshibiLibrary:SW_Slide_SPDT_IS-1235-G" (at 203.2 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 40.64 0)

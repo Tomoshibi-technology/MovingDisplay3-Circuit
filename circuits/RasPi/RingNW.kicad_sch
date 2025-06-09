@@ -2886,7 +2886,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 594e7f88-9768-4cf2-be8d-324bbb26fbec)
   )
-  (hierarchical_label "F446RE->RasPi_GPIO3" (shape input) (at 175.26 86.36 0) (fields_autoplaced)
+  (hierarchical_label "H723VG->RasPi_GPIO3" (shape input) (at 175.26 86.36 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 90134239-5026-447d-82c3-6249cbcd70dc)
   )

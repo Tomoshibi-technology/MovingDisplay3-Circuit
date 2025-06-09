@@ -1,0 +1,48 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 5cc21ad3-a17c-4615-8f1b-99935a785699)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 106.68 86.36) (size 55.88 27.94) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 1ae43741-6287-4977-a94f-302073d897c5)
+    (property "Sheetname" "3rdLayer" (at 106.68 85.6484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "3rdLayer.kicad_sch" (at 106.68 114.8846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "2ndLayer_3rdLayer"
+        (path "/5cc21ad3-a17c-4615-8f1b-99935a785699" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 106.68 43.18) (size 55.88 27.94) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 682cbe04-57d1-42aa-ad60-367d6b4ba6c6)
+    (property "Sheetname" "2ndLayer" (at 106.68 42.4684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "2ndLsyer.kicad_sch" (at 106.68 71.7046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "2ndLayer_3rdLayer"
+        (path "/5cc21ad3-a17c-4615-8f1b-99935a785699" (page "6"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

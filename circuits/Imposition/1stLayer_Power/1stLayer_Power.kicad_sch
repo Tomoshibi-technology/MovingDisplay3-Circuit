@@ -1,0 +1,99 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 599e2e4a-5379-461e-b684-22a177410a52)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 119.38 55.88) (size 40.64 10.16) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2db03a8a-8549-43cf-b021-74f0851aa008)
+    (property "Sheetname" "Conn1" (at 119.38 55.1684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Conn1.kicad_sch" (at 119.38 66.6246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "1stLayer_Power"
+        (path "/599e2e4a-5379-461e-b684-22a177410a52" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 119.38 91.44) (size 30.48 10.16) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4a61e366-1cba-40f1-8aa2-f8a5f6651237)
+    (property "Sheetname" "Conn3" (at 119.38 90.7284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Conn3.kicad_sch" (at 119.38 102.1846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "1stLayer_Power"
+        (path "/599e2e4a-5379-461e-b684-22a177410a52" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 121.92 109.22) (size 35.56 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4a95429b-5753-4814-9743-6878cb0b04f8)
+    (property "Sheetname" "1stLayer" (at 121.92 108.5084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "1stLayer.kicad_sch" (at 121.92 130.1246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "1stLayer_Power"
+        (path "/599e2e4a-5379-461e-b684-22a177410a52" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 119.38 71.12) (size 38.1 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 853e7d82-0cb0-4011-9178-97eaeea1569d)
+    (property "Sheetname" "Conn2" (at 119.38 70.4084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Conn2.kicad_sch" (at 119.38 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "1stLayer_Power"
+        (path "/599e2e4a-5379-461e-b684-22a177410a52" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 121.92 25.4) (size 35.56 22.86) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid dbc2b588-81a0-4f22-bd04-14c8cb566409)
+    (property "Sheetname" "Power" (at 121.92 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 121.92 48.8446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "1stLayer_Power"
+        (path "/599e2e4a-5379-461e-b684-22a177410a52" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
