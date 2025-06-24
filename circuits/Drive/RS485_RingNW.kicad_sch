@@ -2547,7 +2547,7 @@
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin") (at 276.86 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c01bfe08-9452-4351-82e7-cac77c3f9f30)
-    (property "Reference" "J13" (at 254 106.68 0)
+    (property "Reference" "J11" (at 254 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x06_MountingPin" (at 254 109.22 0)
@@ -2569,7 +2569,7 @@
     (instances
       (project "Drive"
         (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/b3d3e3ee-5cca-468f-bf89-e82456b63441"
-          (reference "J13") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )

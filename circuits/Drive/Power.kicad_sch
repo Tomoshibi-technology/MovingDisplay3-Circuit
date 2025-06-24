@@ -2330,10 +2330,6 @@
     (stroke (width 0) (type default))
     (uuid 1b0dd18d-a331-4de5-a5d7-a1e9f67d6191)
   )
-  (wire (pts (xy 292.1 203.2) (xy 292.1 205.74))
-    (stroke (width 0) (type default))
-    (uuid 1b3e621b-03fb-4c9f-a152-ee65f87228aa)
-  )
   (polyline (pts (xy 93.98 30.48) (xy 365.76 30.48))
     (stroke (width 0.5) (type solid))
     (uuid 1c4bab41-8b4e-42f0-9678-a3ea2a71bdf7)
@@ -2391,10 +2387,6 @@
   (wire (pts (xy 124.46 222.25) (xy 124.46 223.52))
     (stroke (width 0) (type default))
     (uuid 21c9a559-cc14-4770-84e3-48aeb4893fa1)
-  )
-  (wire (pts (xy 281.94 203.2) (xy 281.94 205.74))
-    (stroke (width 0) (type default))
-    (uuid 225c9c0a-06d0-4982-974a-1374d5e6418d)
   )
   (wire (pts (xy 109.22 170.18) (xy 109.22 172.72))
     (stroke (width 0) (type default))
@@ -3937,36 +3929,6 @@
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint") (at 292.1 205.74 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 116d959a-4a63-4df8-bfb6-1697e59ac5dd)
-    (property "Reference" "TP1" (at 292.1 213.36 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 292.1 210.82 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" (at 287.02 205.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 287.02 205.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2e693e73-e4b5-459d-ab65-786fbacaf6e3))
-    (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "TP1") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "TP2") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C") (at 121.92 165.1 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 12c1a4bf-afef-44c8-92a9-3ae7f8b4f7d9)
@@ -4661,36 +4623,6 @@
       (project "Drive"
         (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
           (reference "C18") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 281.94 203.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 535669bf-793f-45f4-b3a7-a9003e5565b8)
-    (property "Reference" "#PWR06" (at 281.94 207.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 281.94 199.39 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 281.94 203.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 281.94 203.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b99762ad-6bbe-4408-9902-d2511629cfb2))
-    (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -7215,7 +7147,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 109.22 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e10a0623-7dfc-428f-99b7-d98778ad5e06)
-    (property "Reference" "J11" (at 109.855 63.5 0)
+    (property "Reference" "J6" (at 109.855 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 109.855 66.04 0)
@@ -7232,7 +7164,7 @@
     (instances
       (project "Drive"
         (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "J11") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -7323,36 +7255,6 @@
       (project "Drive"
         (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
           (reference "#PWR048") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 281.94 205.74 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e8abef0a-fb7d-43b3-843f-47fee872bf5c)
-    (property "Reference" "TP3" (at 281.94 213.36 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 281.94 210.82 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" (at 276.86 205.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 276.86 205.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 88cf9d0a-20ad-4811-ad65-338e2ff01781))
-    (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "TP3") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "TP1") (unit 1)
         )
       )
     )
@@ -7705,36 +7607,6 @@
       (project "Drive"
         (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
           (reference "#PWR037") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 292.1 203.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fef9a39f-e509-49af-ad97-95ae70a7ac7c)
-    (property "Reference" "#PWR014" (at 292.1 207.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 292.1 199.39 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 292.1 203.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 292.1 203.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4b87f803-96f3-412b-bebb-28a10ff0091b))
-    (instances
-      (project "Main"
-        (path "/aa9d7141-7530-418f-853d-a56ee68433fb/a9430107-cf2a-4437-9d5a-ed3d69145a18"
-          (reference "#PWR014") (unit 1)
-        )
-      )
-      (project "Drive"
-        (path "/bf4fa0f7-7e40-4646-9c11-e04533c904d6/78bba271-6f80-468f-a85b-9d4b16f8bee8"
-          (reference "#PWR051") (unit 1)
         )
       )
     )

@@ -441,7 +441,7 @@
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_01x08_MountingPin") (at 175.26 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2ab8c02-6400-4d66-ada4-32c175880a52)
-    (property "Reference" "J9" (at 154.94 83.82 0)
+    (property "Reference" "J10" (at 154.94 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x08_MountingPin" (at 154.94 86.36 0)
@@ -465,7 +465,7 @@
     (instances
       (project "1stLayer_Power"
         (path "/599e2e4a-5379-461e-b684-22a177410a52/4a61e366-1cba-40f1-8aa2-f8a5f6651237"
-          (reference "J9") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )

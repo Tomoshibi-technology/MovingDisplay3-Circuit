@@ -1005,7 +1005,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Socket") (at 223.52 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17e3f36e-0648-41e5-8c09-612c290bf2ab)
-    (property "Reference" "J3" (at 208.28 137.16 0)
+    (property "Reference" "J11" (at 208.28 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x10_Socket" (at 208.28 139.7 0)
@@ -1030,7 +1030,7 @@
     (instances
       (project "1stLayer_Power"
         (path "/599e2e4a-5379-461e-b684-22a177410a52/4a95429b-5753-4814-9743-6878cb0b04f8"
-          (reference "J3") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -1215,7 +1215,7 @@
   (symbol (lib_id "Connector:Conn_01x14_Pin") (at 165.1 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6dcc976c-16d0-4450-9bad-5af4af55f078)
-    (property "Reference" "J7" (at 165.1 139.7 0)
+    (property "Reference" "J3" (at 165.1 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x14_Pin" (at 165.1 142.24 0)
@@ -1244,7 +1244,7 @@
     (instances
       (project "1stLayer_Power"
         (path "/599e2e4a-5379-461e-b684-22a177410a52/4a95429b-5753-4814-9743-6878cb0b04f8"
-          (reference "J7") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )

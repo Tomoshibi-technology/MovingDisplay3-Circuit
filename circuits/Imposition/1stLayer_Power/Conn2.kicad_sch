@@ -207,7 +207,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 160.02 106.68 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a70f9ba-f442-46f5-b002-f6c65f6866fc)
-    (property "Reference" "J12" (at 162.56 106.68 0)
+    (property "Reference" "J9" (at 162.56 106.68 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Male" (at 170.18 109.22 0)
@@ -224,7 +224,7 @@
     (instances
       (project "1stLayer_Power"
         (path "/599e2e4a-5379-461e-b684-22a177410a52/853e7d82-0cb0-4011-9178-97eaeea1569d"
-          (reference "J12") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
