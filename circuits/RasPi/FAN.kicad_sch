@@ -702,7 +702,7 @@
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_01x03_MountingPin") (at 157.48 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f5b169e-d103-42e3-8812-e5b3f38f6ce1)
-    (property "Reference" "J13" (at 165.1 83.82 0)
+    (property "Reference" "J4" (at 165.1 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x03_MountingPin" (at 144.78 86.36 0)
@@ -721,7 +721,7 @@
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/fddad0c3-2af8-46e3-8794-fa1122d24d51/ffa9c1a5-d3a0-4e0c-a61b-1846c86fcc40"
-          (reference "J13") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )

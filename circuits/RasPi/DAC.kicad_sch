@@ -612,7 +612,7 @@
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin") (at 190.5 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 803d43a1-f6a2-4fce-95a2-c6a774514a5b)
-    (property "Reference" "J14" (at 172.72 93.98 0)
+    (property "Reference" "J8" (at 172.72 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02_MountingPin" (at 172.72 96.52 0)
@@ -630,7 +630,7 @@
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/a0e6e20f-c732-4650-b515-927ea2aa6bd5/9334b424-6a5a-4e63-a4e0-775039914fa8"
-          (reference "J14") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -664,7 +664,7 @@
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin") (at 190.5 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a4b7b02-0051-4766-8851-67ffa21e742c)
-    (property "Reference" "J12" (at 172.72 121.92 0)
+    (property "Reference" "J7" (at 172.72 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02_MountingPin" (at 172.72 124.46 0)
@@ -682,7 +682,7 @@
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/a0e6e20f-c732-4650-b515-927ea2aa6bd5/9334b424-6a5a-4e63-a4e0-775039914fa8"
-          (reference "J12") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )

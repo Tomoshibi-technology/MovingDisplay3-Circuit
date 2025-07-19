@@ -826,7 +826,7 @@
   (symbol (lib_id "Connector:Micro_SD_Card_Det_Hirose_DM3AT") (at 157.48 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 36dda85a-99e0-4048-ba8b-ef568e0fb9d3)
-    (property "Reference" "J11" (at 158.115 49.53 0)
+    (property "Reference" "J12" (at 158.115 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Micro_SD_Card_Det_Hirose_DM3AT" (at 158.115 52.07 0)
@@ -852,7 +852,7 @@
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/fddad0c3-2af8-46e3-8794-fa1122d24d51/2ec7d498-8e54-4c52-b9ab-4312d8412cc4"
-          (reference "J11") (unit 1)
+          (reference "J12") (unit 1)
         )
       )
     )
@@ -997,7 +997,7 @@
     (property "Value" "2N7002" (at 152.4 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 152.4 131.445 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SC-59" (at 152.4 131.445 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" (at 152.4 133.35 0)

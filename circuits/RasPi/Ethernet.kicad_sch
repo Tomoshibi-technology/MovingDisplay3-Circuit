@@ -1096,7 +1096,7 @@
     (property "Reference" "R94" (at 177.8 73.66 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "470" (at 177.8 71.12 90)
+    (property "Value" "510" (at 177.8 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 177.8 72.898 90)
@@ -1119,7 +1119,7 @@
   (symbol (lib_id "Connector:RJ45_Hanrun_HR911105A_Horizontal") (at 149.86 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5cb2bb12-ac9f-447f-8dbb-cf42010c4c44)
-    (property "Reference" "J7" (at 151.13 52.07 0)
+    (property "Reference" "J13" (at 151.13 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RJ45_LPJK7001AGNL" (at 151.13 54.61 0)
@@ -1145,7 +1145,7 @@
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/fddad0c3-2af8-46e3-8794-fa1122d24d51/2743e81b-c35a-4f5b-a403-d8487e16cd8c"
-          (reference "J7") (unit 1)
+          (reference "J13") (unit 1)
         )
       )
     )
@@ -1157,7 +1157,7 @@
     (property "Reference" "R93" (at 177.8 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "470" (at 177.8 60.96 90)
+    (property "Value" "510" (at 177.8 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 177.8 62.738 90)

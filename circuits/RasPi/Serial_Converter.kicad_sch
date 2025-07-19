@@ -1160,7 +1160,7 @@
   (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0_16P") (at 78.74 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e0f9469e-7632-4bd1-8098-9f101980934d)
-    (property "Reference" "J10" (at 78.74 43.18 0)
+    (property "Reference" "J11" (at 78.74 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB_C_Receptacle_USB2.0_16P" (at 78.74 45.72 0)
@@ -1192,7 +1192,7 @@
     (instances
       (project "RasPi"
         (path "/689a9e74-f202-4ea4-bfbb-4341f2549250/fddad0c3-2af8-46e3-8794-fa1122d24d51/43daae10-1159-44a4-b6d7-7cc0f30c7fe6"
-          (reference "J10") (unit 1)
+          (reference "J11") (unit 1)
         )
       )
     )
