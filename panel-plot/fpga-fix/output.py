@@ -74,6 +74,18 @@ def export_neopixel_c_header(sector_paths, order_map, neo_pixel):
             })
             sector_counter += 1
     
+    # 範囲を計算
+    if neo_data:
+        x_values = [data['x'] for data in neo_data]
+        y_values = [data['y'] for data in neo_data]
+        r_values = [data['r'] for data in neo_data]
+        theta_values = [data['theta_deg'] for data in neo_data]
+        
+        x_min, x_max = min(x_values), max(x_values)
+        y_min, y_max = min(y_values), max(y_values)
+        r_min, r_max = min(r_values), max(r_values)
+        theta_min, theta_max = min(theta_values), max(theta_values)
+    
     # C言語の統合ヘッダーファイルとして出力
     output_file_h = os.path.join(os.path.dirname(__file__), 'neopixel_coordinates.h')
     with open(output_file_h, 'w') as f:
@@ -83,7 +95,23 @@ def export_neopixel_c_header(sector_paths, order_map, neo_pixel):
         f.write("#include <stddef.h>\n\n")
         f.write("// NeoPixel座標データ（整数形式）\n")
         f.write("// 自動生成されたファイル - 手動で編集しないでください\n")
-        f.write("// 座標値は0.01mm単位、回転角度は0.1度単位で格納\n\n")
+        f.write("// 座標値は0.01mm単位、回転角度は0.1度単位で格納\n")
+        f.write("//\n")
+        f.write("// データ範囲とスケーリング情報:\n")
+        f.write(f"//   ID: 0 ~ {len(neo_data)-1} (total: {len(neo_data)} NeoPixels)\n")
+        f.write(f"//   X座標: {x_min} ~ {x_max} (実値: {x_min/COORDINATE_SCALE:.2f}mm ~ {x_max/COORDINATE_SCALE:.2f}mm)\n")
+        f.write(f"//   Y座標: {y_min} ~ {y_max} (実値: {y_min/COORDINATE_SCALE:.2f}mm ~ {y_max/COORDINATE_SCALE:.2f}mm)\n")
+        f.write(f"//   半径: {r_min} ~ {r_max} (実値: {r_min/COORDINATE_SCALE:.2f}mm ~ {r_max/COORDINATE_SCALE:.2f}mm)\n")
+        f.write(f"//   角度: {theta_min} ~ {theta_max} (実値: {theta_min/ROTATION_SCALE:.1f}° ~ {theta_max/ROTATION_SCALE:.1f}°)\n")
+        f.write("//\n")
+        f.write("// スケーリング係数:\n")
+        f.write(f"//   COORDINATE_SCALE = {COORDINATE_SCALE} (座標値を{COORDINATE_SCALE}倍してint16_tに格納)\n")
+        f.write(f"//   ROTATION_SCALE = {ROTATION_SCALE} (角度値を{ROTATION_SCALE}倍してint16_tに格納)\n")
+        f.write("//\n")
+        f.write("// 変換式:\n")
+        f.write("//   実座標値[mm] = int16_t値 / COORDINATE_SCALE\n")
+        f.write("//   実角度値[°] = int16_t値 / ROTATION_SCALE\n")
+        f.write("//   int16_t値 = 実値 * スケール\n\n")
         
         f.write(f"#define NEOPIXEL_COUNT {len(neo_data)}\n")
         f.write("#define COORDINATE_SCALE 100  // 座標値のスケーリング係数（0.01mm単位）\n")
