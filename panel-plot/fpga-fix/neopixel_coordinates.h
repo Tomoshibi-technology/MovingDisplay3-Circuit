@@ -2,6 +2,7 @@
 #define NEOPIXEL_COORDINATES_H
 
 #include <stdint.h>
+#include <stddef.h>
 
 // NeoPixel座標データ（整数形式）
 // 自動生成されたファイル - 手動で編集しないでください
@@ -1222,14 +1223,22 @@ static const NeoPixelCoord neopixel_coords[NEOPIXEL_COUNT] = {
     { 1199,   3745,   7558,   8435,  2964 }  // F199
 };
 
-// 便利な関数のプロトタイプ宣言
-const NeoPixelCoord* get_neopixel_coord(int16_t id);
-int16_t get_neopixel_count(void);
-
 // 座標変換用のヘルパーマクロ
 #define COORD_TO_FLOAT(coord) ((float)(coord) / COORDINATE_SCALE)
 #define ROTATION_TO_FLOAT(rot) ((float)(rot) / ROTATION_SCALE)
 #define FLOAT_TO_COORD(val) ((int16_t)((val) * COORDINATE_SCALE))
 #define FLOAT_TO_ROTATION(val) ((int16_t)((val) * ROTATION_SCALE))
+
+// ユーティリティ関数
+static inline const NeoPixelCoord* get_neopixel_coord(int16_t id) {
+    if (id < 0 || id >= NEOPIXEL_COUNT) {
+        return NULL;
+    }
+    return &neopixel_coords[id];
+}
+
+static inline int16_t get_neopixel_count(void) {
+    return NEOPIXEL_COUNT;
+}
 
 #endif // NEOPIXEL_COORDINATES_H

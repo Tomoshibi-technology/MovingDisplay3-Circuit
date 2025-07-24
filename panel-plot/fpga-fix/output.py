@@ -44,7 +44,7 @@ def export_units(sector_paths, order_map, neo_pixel, mlcc):
             id_counter += 1
 
 def export_neopixel_c_header(sector_paths, order_map, neo_pixel):
-    """NeoPixelの座標とIDをC言語のヘッダーファイルとして出力（int16_t形式）"""
+    """NeoPixelの座標とIDを統合されたC言語ヘッダーファイルとして出力（int16_t形式）"""
     neo_data = []
     
     # スケーリング係数（浮動小数点から整数への変換用）
@@ -74,12 +74,13 @@ def export_neopixel_c_header(sector_paths, order_map, neo_pixel):
             })
             sector_counter += 1
     
-    # C言語のヘッダーファイルとして出力
+    # C言語の統合ヘッダーファイルとして出力
     output_file_h = os.path.join(os.path.dirname(__file__), 'neopixel_coordinates.h')
     with open(output_file_h, 'w') as f:
         f.write("#ifndef NEOPIXEL_COORDINATES_H\n")
         f.write("#define NEOPIXEL_COORDINATES_H\n\n")
-        f.write("#include <stdint.h>\n\n")
+        f.write("#include <stdint.h>\n")
+        f.write("#include <stddef.h>\n\n")
         f.write("// NeoPixel座標データ（整数形式）\n")
         f.write("// 自動生成されたファイル - 手動で編集しないでください\n")
         f.write("// 座標値は0.01mm単位、回転角度は0.1度単位で格納\n\n")
@@ -103,19 +104,29 @@ def export_neopixel_c_header(sector_paths, order_map, neo_pixel):
                    f"{data['r']:6d}, {data['theta_deg']:5d} }}{comma}  // {data['sector_label']}\n")
         f.write("};\n\n")
         
-        # 便利な関数のプロトタイプ宣言
-        f.write("// 便利な関数のプロトタイプ宣言\n")
-        f.write("const NeoPixelCoord* get_neopixel_coord(int16_t id);\n")
-        f.write("int16_t get_neopixel_count(void);\n")
-        f.write("\n// 座標変換用のヘルパーマクロ\n")
+        # 座標変換用のヘルパーマクロ
+        f.write("// 座標変換用のヘルパーマクロ\n")
         f.write("#define COORD_TO_FLOAT(coord) ((float)(coord) / COORDINATE_SCALE)\n")
         f.write("#define ROTATION_TO_FLOAT(rot) ((float)(rot) / ROTATION_SCALE)\n")
         f.write("#define FLOAT_TO_COORD(val) ((int16_t)((val) * COORDINATE_SCALE))\n")
         f.write("#define FLOAT_TO_ROTATION(val) ((int16_t)((val) * ROTATION_SCALE))\n\n")
         
+        # インライン関数
+        f.write("// ユーティリティ関数\n")
+        f.write("static inline const NeoPixelCoord* get_neopixel_coord(int16_t id) {\n")
+        f.write("    if (id < 0 || id >= NEOPIXEL_COUNT) {\n")
+        f.write("        return NULL;\n")
+        f.write("    }\n")
+        f.write("    return &neopixel_coords[id];\n")
+        f.write("}\n\n")
+        
+        f.write("static inline int16_t get_neopixel_count(void) {\n")
+        f.write("    return NEOPIXEL_COUNT;\n")
+        f.write("}\n\n")
+        
         f.write("#endif // NEOPIXEL_COORDINATES_H\n")
     
-    print(f"C言語ヘッダーファイル（int16_t形式）を出力しました: {output_file_h}")
+    print(f"統合C言語ヘッダーファイル（int16_t形式）を出力しました: {output_file_h}")
     return neo_data
 
 def export_neopixel_c_source(neo_data):

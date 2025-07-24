@@ -165,13 +165,11 @@ def main():
     }
     
     # CSV出力部分（CSV書き出し処理は output.py に実装）
-    from output import export_units, export_neopixel_c_header, export_neopixel_c_source, export_neopixel_c_arrays
+    from output import export_units, export_neopixel_c_header
     export_units(sector_paths, order_map, neo_pixel, mlcc)
     
-    # C言語用のNeoPixel座標データを出力
+    # C言語用のNeoPixel座標データを統合ヘッダファイルとして出力
     neo_data = export_neopixel_c_header(sector_paths, order_map, neo_pixel)
-    export_neopixel_c_source(neo_data)
-    export_neopixel_c_arrays(sector_paths, order_map, neo_pixel)
     
     # ユニット (NeoPixel, MLCC) を全ての極座標点で描画
     all_rectangles = []
