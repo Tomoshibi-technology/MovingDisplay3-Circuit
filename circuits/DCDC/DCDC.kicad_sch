@@ -550,7 +550,7 @@
     (property "Sheetfile" "Power.kicad_sch" (at 83.82 69.1646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "SHDN_overV" input (at 104.14 60.96 0)
+    (pin "SHDN_OV" input (at 104.14 60.96 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid ad1cedc5-3b47-438f-9052-455e4a581db3)
     )
